@@ -1,0 +1,38 @@
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.DataAccess\bin\Debug\net7.0\PORTOFOLIO.DataAccess.deps.json
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.DataAccess\bin\Debug\net7.0\PORTOFOLIO.DataAccess.dll
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.DataAccess\bin\Debug\net7.0\PORTOFOLIO.DataAccess.pdb
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.DataAccess\obj\Debug\net7.0\PORTOFOLIO.DataAccess.csproj.AssemblyReference.cache
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.DataAccess\obj\Debug\net7.0\PORTOFOLIO.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.DataAccess\obj\Debug\net7.0\PORTOFOLIO.DataAccess.AssemblyInfoInputs.cache
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.DataAccess\obj\Debug\net7.0\PORTOFOLIO.DataAccess.AssemblyInfo.cs
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.DataAccess\obj\Debug\net7.0\PORTOFOLIO.DataAccess.csproj.CoreCompileInputs.cache
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.DataAccess\obj\Debug\net7.0\PORTOFOLIO.DataAccess.dll
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.DataAccess\obj\Debug\net7.0\refint\PORTOFOLIO.DataAccess.dll
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.DataAccess\obj\Debug\net7.0\PORTOFOLIO.DataAccess.pdb
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.DataAccess\obj\Debug\net7.0\ref\PORTOFOLIO.DataAccess.dll
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.DataAccess\bin\Debug\net7.0\PORTOFOLIO.DataAccess.runtimeconfig.json
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.DataAccess\obj\Debug\net7.0\PORTOFOLIO.DataAccess.genruntimeconfig.cache
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.DataAccess\bin\Debug\net7.0\PORTOFOLIO.Models.dll
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.DataAccess\bin\Debug\net7.0\PORTOFOLIO.Utility.dll
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.DataAccess\bin\Debug\net7.0\PORTOFOLIO.Models.pdb
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.DataAccess\bin\Debug\net7.0\PORTOFOLIO.Utility.pdb
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.DataAccess\obj\Debug\net7.0\PORTOFOLIO.DataAccess.csproj.CopyComplete
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.DataAccess\bin\Debug\net7.0\PORTOFOLIO.DataAccess.deps.json
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.DataAccess\bin\Debug\net7.0\PORTOFOLIO.DataAccess.runtimeconfig.json
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.DataAccess\bin\Debug\net7.0\PORTOFOLIO.DataAccess.dll
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.DataAccess\bin\Debug\net7.0\PORTOFOLIO.DataAccess.pdb
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.DataAccess\bin\Debug\net7.0\PORTOFOLIO.Models.dll
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.DataAccess\bin\Debug\net7.0\PORTOFOLIO.Utility.dll
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.DataAccess\bin\Debug\net7.0\PORTOFOLIO.Models.pdb
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.DataAccess\bin\Debug\net7.0\PORTOFOLIO.Utility.pdb
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.DataAccess\obj\Debug\net7.0\PORTOFOLIO.DataAccess.csproj.AssemblyReference.cache
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.DataAccess\obj\Debug\net7.0\PORTOFOLIO.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.DataAccess\obj\Debug\net7.0\PORTOFOLIO.DataAccess.AssemblyInfoInputs.cache
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.DataAccess\obj\Debug\net7.0\PORTOFOLIO.DataAccess.AssemblyInfo.cs
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.DataAccess\obj\Debug\net7.0\PORTOFOLIO.DataAccess.csproj.CoreCompileInputs.cache
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.DataAccess\obj\Debug\net7.0\PORTOFOLIO.DataAccess.csproj.CopyComplete
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.DataAccess\obj\Debug\net7.0\PORTOFOLIO.DataAccess.dll
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.DataAccess\obj\Debug\net7.0\refint\PORTOFOLIO.DataAccess.dll
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.DataAccess\obj\Debug\net7.0\PORTOFOLIO.DataAccess.pdb
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.DataAccess\obj\Debug\net7.0\PORTOFOLIO.DataAccess.genruntimeconfig.cache
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.DataAccess\obj\Debug\net7.0\ref\PORTOFOLIO.DataAccess.dll

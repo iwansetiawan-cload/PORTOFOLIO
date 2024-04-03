@@ -1,0 +1,24 @@
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.Utility\bin\Debug\net7.0\PORTOFOLIO.Utility.deps.json
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.Utility\bin\Debug\net7.0\PORTOFOLIO.Utility.dll
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.Utility\bin\Debug\net7.0\PORTOFOLIO.Utility.pdb
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.Utility\obj\Debug\net7.0\PORTOFOLIO.Utility.csproj.AssemblyReference.cache
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.Utility\obj\Debug\net7.0\PORTOFOLIO.Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.Utility\obj\Debug\net7.0\PORTOFOLIO.Utility.AssemblyInfoInputs.cache
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.Utility\obj\Debug\net7.0\PORTOFOLIO.Utility.AssemblyInfo.cs
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.Utility\obj\Debug\net7.0\PORTOFOLIO.Utility.csproj.CoreCompileInputs.cache
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.Utility\obj\Debug\net7.0\PORTOFOLIO.Utility.dll
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.Utility\obj\Debug\net7.0\refint\PORTOFOLIO.Utility.dll
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.Utility\obj\Debug\net7.0\PORTOFOLIO.Utility.pdb
+D:\My File\MY PROJECT\2022\PORTOFOLIO\PORTOFOLIO.Utility\obj\Debug\net7.0\ref\PORTOFOLIO.Utility.dll
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.Utility\bin\Debug\net7.0\PORTOFOLIO.Utility.deps.json
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.Utility\bin\Debug\net7.0\PORTOFOLIO.Utility.dll
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.Utility\bin\Debug\net7.0\PORTOFOLIO.Utility.pdb
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.Utility\obj\Debug\net7.0\PORTOFOLIO.Utility.csproj.AssemblyReference.cache
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.Utility\obj\Debug\net7.0\PORTOFOLIO.Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.Utility\obj\Debug\net7.0\PORTOFOLIO.Utility.AssemblyInfoInputs.cache
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.Utility\obj\Debug\net7.0\PORTOFOLIO.Utility.AssemblyInfo.cs
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.Utility\obj\Debug\net7.0\PORTOFOLIO.Utility.csproj.CoreCompileInputs.cache
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.Utility\obj\Debug\net7.0\PORTOFOLIO.Utility.dll
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.Utility\obj\Debug\net7.0\refint\PORTOFOLIO.Utility.dll
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.Utility\obj\Debug\net7.0\PORTOFOLIO.Utility.pdb
+D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.Utility\obj\Debug\net7.0\ref\PORTOFOLIO.Utility.dll
