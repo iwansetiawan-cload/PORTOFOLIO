@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Hosting;
 using PORTOFOLIO.DataAccess.Repository.IRepository;
 using PORTOFOLIO.Models;
 
@@ -8,12 +9,16 @@ namespace PORTOFOLIO.Areas.Admin.Controllers
     public class BrandaController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
-        public BrandaController(IUnitOfWork unitOfWork)
+        private readonly IWebHostEnvironment _hostEnvironment;
+        public BrandaController(IUnitOfWork unitOfWork,
+            IWebHostEnvironment hostEnvironment
+            )
         {
-            _unitOfWork = unitOfWork;
+			_unitOfWork = unitOfWork;
+            _hostEnvironment = hostEnvironment;
         }
         public IActionResult Index()
-        {
+        {         
             return View();
         }
         [HttpGet]
@@ -49,7 +54,8 @@ namespace PORTOFOLIO.Areas.Admin.Controllers
         public IActionResult Upsert(Branda branda)
         {
             if (ModelState.IsValid)
-            {
+            {             
+
                 if (branda.Id == 0)
                 {
                     _unitOfWork.Branda.Add(branda);
@@ -57,6 +63,42 @@ namespace PORTOFOLIO.Areas.Admin.Controllers
                 }
                 else
                 {
+                    string webRootPath = _hostEnvironment.WebRootPath;
+                    var files = HttpContext.Request.Form.Files;
+                    if (files.Count > 0)
+                    {
+                        var uploads = Path.Combine(webRootPath, @"images\slide");
+                        string fileName = "";
+                        var extenstion = ".jpg";
+                        if (branda.Position == "1")
+                        {
+                            fileName = "slide-1";
+                        }
+                        else if (branda.Position == "2")
+                        {
+                            fileName = "slide-2";
+                        }
+                        else
+                        {
+                            fileName = "slide-3";
+                        }                     
+
+                        if (branda.Photo != null)
+                        {
+                            //this is an edit and we need to remove old image
+                            var imagePath = Path.Combine(webRootPath, branda.Photo.TrimStart('\\'));
+                            if (System.IO.File.Exists(imagePath))
+                            {
+                                System.IO.File.Delete(imagePath);
+                            }
+                        }
+                        using (var filesStreams = new FileStream(Path.Combine(uploads, fileName + extenstion), FileMode.Create))
+                        {
+                            files[0].CopyTo(filesStreams);
+                        }
+                        branda.Photo = fileName  + extenstion;
+                    }
+
                     _unitOfWork.Branda.Update(branda);
                     TempData["success"] = "Branda updated successfully";
                 }

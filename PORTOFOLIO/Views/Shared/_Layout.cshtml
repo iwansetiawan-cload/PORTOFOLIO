@@ -101,7 +101,7 @@
             <div class="container clearfix">
                 <div class="contact-info float-left">
                     <i class="icofont-envelope"></i><a href="iwan.setti@yahoo.com">iwan.setti@yahoo.com</a>
-                    <i class="icofont-phone"></i> +1 5589 55488 55
+                    <i class="icofont-phone"></i> +62 81289277785
                 </div>
                 <div class="social-links float-right">
                     <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
@@ -109,7 +109,8 @@
                     <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
                     <a href="#" class="skype"><i class="icofont-skype"></i></a>
                     <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
-                    <a class="nav-link" id="login" asp-area="Identity" asp-page="/Account/Login"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                    <a asp-area="Identity" asp-page="/Account/Login" class="login"><i class="fa fa-sign-in"></i></a>
+                   @* <a class="nav-link" id="login" asp-area="Identity" asp-page="/Account/Login"><i class="fa fa-sign-in" aria-hidden="true"></i></a>*@
                 </div>
             </div>
         </section>
@@ -117,7 +118,7 @@
         <header id="header">
             <nav class="navbar navbar-expand-sm">
                 <div class="container">
-                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">E_One</a>
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">PORTOFOLIO</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -148,12 +149,6 @@
 
                             </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="Admin" asp-controller="Branda" asp-action="Index">
-                                    Branda
-                                </a>
-                            </li>
-
                         </ul>
 
                     </div>
@@ -178,7 +173,7 @@
     {
         <!-- ======= Footer ======= -->
         <footer id="footer">
-            <div class="footer-top">
+           @* <div class="footer-top">
                 <div class="container">
                     <div class="row">
 
@@ -232,7 +227,7 @@
 
                     </div>
                 </div>
-            </div>
+            </div>*@
 
             <div class="container">
                 <div class="copyright">

@@ -28,4 +28,8 @@
     <ProjectReference Include="..\PORTOFOLIO.Utility\PORTOFOLIO.Utility.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\slide\" />
+  </ItemGroup>
+
 </Project>

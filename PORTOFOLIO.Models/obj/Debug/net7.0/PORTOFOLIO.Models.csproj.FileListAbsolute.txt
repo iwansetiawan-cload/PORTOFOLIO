@@ -22,3 +22,15 @@ D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.Models\obj\Debug\net7.0\PORT
 D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.Models\obj\Debug\net7.0\refint\PORTOFOLIO.Models.dll
 D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.Models\obj\Debug\net7.0\PORTOFOLIO.Models.pdb
 D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO.Models\obj\Debug\net7.0\ref\PORTOFOLIO.Models.dll
+D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO.Models\bin\Debug\net7.0\PORTOFOLIO.Models.deps.json
+D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO.Models\bin\Debug\net7.0\PORTOFOLIO.Models.dll
+D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO.Models\bin\Debug\net7.0\PORTOFOLIO.Models.pdb
+D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO.Models\obj\Debug\net7.0\PORTOFOLIO.Models.csproj.AssemblyReference.cache
+D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO.Models\obj\Debug\net7.0\PORTOFOLIO.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO.Models\obj\Debug\net7.0\PORTOFOLIO.Models.AssemblyInfoInputs.cache
+D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO.Models\obj\Debug\net7.0\PORTOFOLIO.Models.AssemblyInfo.cs
+D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO.Models\obj\Debug\net7.0\PORTOFOLIO.Models.csproj.CoreCompileInputs.cache
+D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO.Models\obj\Debug\net7.0\PORTOFOLIO.Models.dll
+D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO.Models\obj\Debug\net7.0\refint\PORTOFOLIO.Models.dll
+D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO.Models\obj\Debug\net7.0\PORTOFOLIO.Models.pdb
+D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO.Models\obj\Debug\net7.0\ref\PORTOFOLIO.Models.dll
