@@ -9,6 +9,7 @@ namespace PORTOFOLIO.DataAccess.Repository.IRepository
     public interface IUnitOfWork : IDisposable
     {
         IBrandaRepository Branda { get; }
+        IAboutUsRepository AboutUs { get; }
         void Save();
     }
 }

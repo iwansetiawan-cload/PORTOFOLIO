@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/PORTOFOLIO.styles.css" asp-append-version="true" />
-
+    <link rel="shortcut icon" href="https://idsolusi.com/wp-content/themes/idsolusi/images/favicon.ico?ver=2" type="image/x-icon">
+    <link rel="icon" href="https://idsolusi.com/wp-content/themes/idsolusi/images/favicon.ico?ver=2" type="image/x-icon">
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -68,18 +69,19 @@
 
             <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary border-bottom box-shadow mb-3">
                 <div class="container-fluid">
-                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">PORTOFOLIO</a>
+                    <a class="navbar-brand" asp-area="Admin" asp-controller="Branda" asp-action="Index"><i class="fa fa-fw fa-home"></i> PORTOFOLIO</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                         <ul class="navbar-nav flex-grow-1">
+                  
                             <li class="nav-item">
-                                <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                                <a class="nav-link active" asp-area="Admin" asp-controller="Branda" asp-action="Index">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" asp-area="Admin" asp-controller="Branda" asp-action="Index">Profile</a>
+                                <a class="nav-link" asp-area="Admin" asp-controller="AboutUs" asp-action="Index">About Us</a>
                             </li>
                         </ul>
                         <partial name="_LoginPartial" />
@@ -118,13 +120,16 @@
         <header id="header">
             <nav class="navbar navbar-expand-sm">
                 <div class="container">
-                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">PORTOFOLIO</a>
+                    <a class="navbar-brand" href="#">
+                        <img src="~/images/SC.png" class="img-responsive">
+                    </a>
+                    @*<a class="navbar-brand" src="images/SC.PNG" asp-area="" asp-controller="Home" asp-action="Index"></a>*@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     @* <div class="logo float-left">
-                <h1 class="text-light"><a href="index.html"><span>E-ONE</span></a></h1>
+                <h1 class="text-light"><a href="index.html"><span>E-ONE</span></a></h1>/
 
                 </div>*@
                     <div class="nav-menu float-right d-none d-lg-block">
@@ -165,7 +170,7 @@
     {
         <footer class="border-top footer text-muted">
             <div class="container">
-                &copy; 2024 - PORTOFOLIO - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                &copy; 2024 - PORTOFOLIO - <a asp-area="Admin" asp-controller="Branda" asp-action="Index">Home</a>
             </div>
         </footer>
     }
@@ -238,7 +243,8 @@
                     <!-- You can delete the links only if you purchased the pro version. -->
                     <!-- Licensing information: https://bootstrapmade.com/license/ -->
                     <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/ -->
-                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                    Designed by iwan setiawan
+                    @*<a href="https://bootstrapmade.com/">BootstrapMade</a>*@
                 </div>
             </div>
         </footer>

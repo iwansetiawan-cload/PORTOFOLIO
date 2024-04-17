@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CjilxbiQJpMa12Ax5UuLZa3L334wWUxFi+aiFE1s3YI=",
+  "Hash": "Ln1wqR2OFXcumBxPs+x3RG9zQ27oQLoqa7aimhnlylc=",
   "Source": "PORTOFOLIO",
   "BasePath": "_content/PORTOFOLIO",
   "Mode": "Default",
@@ -2550,6 +2550,23 @@
       "OriginalItemSpec": "wwwroot\\forms\\Readme.txt"
     },
     {
+      "Identity": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\aboutus\\aboutUs.jpg",
+      "SourceId": "PORTOFOLIO",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\",
+      "BasePath": "_content/PORTOFOLIO",
+      "RelativePath": "images/aboutus/aboutUs.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\aboutus\\aboutUs.jpg"
+    },
+    {
       "Identity": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\logo.png",
       "SourceId": "PORTOFOLIO",
       "SourceType": "Discovered",
@@ -2565,6 +2582,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\logo.png"
+    },
+    {
+      "Identity": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\SC.png",
+      "SourceId": "PORTOFOLIO",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\",
+      "BasePath": "_content/PORTOFOLIO",
+      "RelativePath": "images/SC.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\SC.png"
     },
     {
       "Identity": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\slide\\slide-1.jpg",

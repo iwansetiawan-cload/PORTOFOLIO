@@ -1,118 +1,85 @@
-﻿@model PORTOFOLIO.Models.Branda
+﻿@model PORTOFOLIO.Models.AboutUs
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
+    var title = "Input About Us";
 }
 
-<div class="container">
-    <div class="card shadow border-0 mt-4">
-        <div class="card-header bg-secondary bg-gradient ml-0 py-3">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2 class="text-white py-2"> Branda List</h2>
-                </div>
-            </div>
-        </div>
-        <div class="card-body p-4">
-            <div class="row pb-3">
-                <div class="col-6">
-                </div>
-                @*<div class="col-6 text-end">
-                <a asp-controller="Branda" asp-action="Upsert" class="btn btn-primary">
-                <i class="bi bi-plus-circle"></i> Create New Branda
-                </a>
-                </div>*@
-                <div class="col-md-6">
 
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <a class="btn btn-primary" asp-action="Upsert"><i class="fas fa-plus" aria-hidden="true"></i> &nbsp; Create New Branda</a>
+<form id="profile-form" method="post" enctype="multipart/form-data">
+    <div class="container">
+        <div class="row p-3 shadow border-0 mt-4">
+            <input asp-for="Id" class="form-control" hidden />
+            <input asp-for="Photo" class="form-control" hidden />
+            <div class="col-12 border-bottom">
+                <h2 class="text-primary">@title</h2>
+            </div>
+            <div class="col-12 pt-2">
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label>Tentang Kami</label>
+                    </div>
+                    <div class="col-10">
+                        <textarea asp-for="Description" class="form-control"></textarea>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label>Visi</label>
+                    </div>
+                    <div class="col-10">
+                        <textarea asp-for="Vision" class="form-control"></textarea>
+                        <span asp-validation-for="Vision" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label>Misi</label>
+                    </div>
+                    <div class="col-10">
+                        <textarea asp-for="Mission" class="form-control"></textarea>
+                        <span asp-validation-for="Mission" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+            
+                    @Html.LabelFor(model => model.Photo, "Image", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-10">
+                        <input type="file" name="files" id="uploadBox" multiple class="form-control" />
+                    </div>
+                </div>
+                <br />
+
+
+                <div class="form-group row">
+                    <div class="col-4 offset-4">
+
+                        @if (Model.Id != 0)
+                        {                          
+                            <button type="submit" class="btn btn-success form-control">Update</button>
+                        }
+                        else
+                        {
+                            <partial name="_CreateAndBackToListButton" />
+                        }
                     </div>
                 </div>
             </div>
 
-            <div class="p-4 border rounded" style="min-width:100px;overflow:scroll;">
-                <table id="tblData" class="table table-striped table-bordered" style="width:100%">
-                    <thead class="thead-dark">
-                        <tr class="table-info">
-                            <th>
-                                Title
-                            </th>
-                            <th>
-                                Content
-                            </th>
-                            <th>
-                                Status
-                            </th>
-
-                            <th>
-                            </th>
-                        </tr>
-                    </thead>
-                </table>
-            </div>
         </div>
-    </div>
-</div>
 
+    </div>
+
+</form>
 
 @section Scripts{
+    <script src="assets/js/main.js"></script>
+    <partial name="_ValidationScriptsPartial" />
     <script type="text/javascript">
-        $(document).ready(function () {
-            loadDataTable();
 
-        });
-        function loadDataTable() {
-            dataTable = $('#tblData').DataTable({
-                "ajax": {
-                    "url": "/Admin/Branda/GetAll"
-                },
-                "columns": [
-                    { "data": "title", "autoWidth": true },
-                    { "data": "content", "autoWidth": true },
-                    { "data": "position", "autoWidth": true },
-                    {
-                        "data": "id",
-                        "render": function (data) {
-                            return `
-                                            <div class="text-center">
-                                                <a href="/Admin/Branda/Upsert/${data}" class="btn btn-success text-white" style="cursor:pointer">
-                                                    <i class="fas fa-edit"></i>
-                                                </a>
-                                                <a onclick=Delete("/Admin/Branda/Delete/${data}") class="btn btn-danger text-white" style="cursor:pointer">
-                                                    <i class="fas fa-trash-alt"></i>
-                                                </a>
-                                            </div>
-                                           `;
-                        }, "autoWidth": true
-                    }
-                ]
-            });
-        }
-        function Delete(url) {
-            swal({
-                title: "Are you sure you want to Delete?",
-                text: "You will not be able to restore the data!",
-                icon: "warning",
-                buttons: true,
-                dangerMode: true
-            }).then((willDelete) => {
-                if (willDelete) {
-                    $.ajax({
-                        type: "DELETE",
-                        url: url,
-                        success: function (data) {
-                            if (data.success) {
-                                toastr.success(data.message);
-                                dataTable.ajax.reload();
-                            }
-                            else {
-                                toastr.error(data.message);
-                            }
-                        }
-                    });
-                }
-            });
-        }
+
 
     </script>
 

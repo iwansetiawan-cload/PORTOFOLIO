@@ -19,8 +19,8 @@
                         <div class="carousel-container">
                             <div class="carousel-content container">
                                 <h2 class="animated fadeInDown">@ViewBag.TitleSlide1</h2>
-                                <p class="animated fadeInUp">@ViewBag.TextSlide1</p>
-                                <a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>
+                                <p class="animated fadeInUp">@ViewBag.TextSlide1_</p>
+                                <a href="#details" class="btn-get-started animated fadeInUp scrollto">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -30,8 +30,8 @@
                         <div class="carousel-container">
                             <div class="carousel-content container">
                                 <h2 class="animated fadeInDown">@ViewBag.TitleSlide2</h2>
-                                <p class="animated fadeInUp">@ViewBag.TextSlide2</p>
-                                <a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>
+                                <p class="animated fadeInUp">@ViewBag.TextSlide2_</p>
+                                <a href="#details" class="btn-get-started animated fadeInUp scrollto">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -41,8 +41,8 @@
                         <div class="carousel-container">
                             <div class="carousel-content container">
                                 <h2 class="animated fadeInDown">@ViewBag.TitleSlide2</h2>
-                                <p class="animated fadeInUp">@ViewBag.TextSlide3</p>
-                                <a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>
+                                <p class="animated fadeInUp">@ViewBag.TextSlide3_</p>
+                                <a href="#details" class="btn-get-started animated fadeInUp scrollto">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -62,6 +62,42 @@
         </div>
     </section>
 
+    <!-- ====== Detail ====== -->
+    <section id="details" class="profile-sec sec-pad-top-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12 mb-30">
+                    <div class="mdl-card mdl-shadow--2dp text-center">
+                        <i class="zmdi zmdi-code font-blue profile-icon"></i>
+                        <h4 class="mb-15">@ViewBag.TitleSlide1</h4>
+                        <p>
+                            @ViewBag.TextSlide1
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 mb-30">
+                    <div class="mdl-card mdl-shadow--2dp text-center">
+                        <i class="zmdi zmdi-format-color-text font-green profile-icon"></i>
+                        <h4 class="mb-15">@ViewBag.TitleSlide2</h4>
+                        <p>
+                            @ViewBag.TextSlide2
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 mb-30">
+                    <div class="mdl-card mdl-shadow--2dp text-center">
+                        <i class="zmdi zmdi-book font-yellow profile-icon"></i>
+                        <h4 class="mb-15">@ViewBag.TitleSlide3</h4>
+                        <p>
+                            @ViewBag.TextSlide3
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+
     <!-- End Hero -->
 
     <main id="main">
@@ -70,29 +106,29 @@
         <section id="about" class="about">
             <div class="container">
 
-                <div class="row no-gutters">
+                <div class="row">
                     <div class="col-lg-6 video-box">
-                        <img src="assets/img/about.jpg" class="img-fluid" alt="">
-                        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+                        <img src="~/images/aboutus/aboutUs.jpg" class="img-fluid" alt="">
+                        <a href="https://www.youtube.com/watch?v=TlHXpLxpznM" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
                     </div>
 
                     <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
 
                         <div class="section-title">
-                            <h2>About Us</h2>
-                            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+                            <h2>Siapa Kami</h2>
+                            <p>@ViewBag.Description</p>
                         </div>
 
                         <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                            <div class="icon"><i class="bx bx-fingerprint"></i></div>
-                            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                            <div class="icon"><i class="bx bx-album"></i></div>
+                            <h4 class="title"><a href="">Visi</a></h4>
+                            <p class="description">@ViewBag.TextVision</p>
                         </div>
 
                         <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                             <div class="icon"><i class="bx bx-gift"></i></div>
-                            <h4 class="title"><a href="">Nemo Enim</a></h4>
-                            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                            <h4 class="title"><a href="">Misi</a></h4>
+                            <p class="description">@ViewBag.TextMision</p>
                         </div>
 
                     </div>
@@ -590,4 +626,5 @@
 
     <!-- End #main -->
 }
+
 

@@ -353,6 +353,14 @@
       "PackagePath": "staticwebassets\\forms\\contact.php"
     },
     {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\SC.png",
+      "PackagePath": "staticwebassets\\images\\SC.png"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\aboutus\\aboutUs.jpg",
+      "PackagePath": "staticwebassets\\images\\aboutus\\aboutUs.jpg"
+    },
+    {
       "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\logo.png",
       "PackagePath": "staticwebassets\\images\\logo.png"
     },

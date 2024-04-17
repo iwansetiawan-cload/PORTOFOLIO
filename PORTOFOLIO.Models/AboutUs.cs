@@ -11,8 +11,9 @@ namespace PORTOFOLIO.Models
     {
         [Key]
         public int Id { get; set; }
-        public string? Title { get; set; }
-        public string? Content { get; set; }
+        public string? Description { get; set; }
+        public string? Vision { get; set; }
+        public string? Mission { get; set; }
         public string? Photo { get; set; }
         public int? Flag { get; set; }
         public string? EntryBy { get; set; }

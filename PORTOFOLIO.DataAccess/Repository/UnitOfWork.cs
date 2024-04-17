@@ -15,8 +15,10 @@ namespace PORTOFOLIO.DataAccess.Repository
         {
             _db = db;
             Branda = new BrandaRepository(_db);
+            AboutUs = new AboutUsRepository(_db);
         }
         public IBrandaRepository Branda { get; private set; }
+        public IAboutUsRepository AboutUs { get; private set; }
 
         public void Dispose()
         {
