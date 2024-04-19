@@ -10,6 +10,8 @@ namespace PORTOFOLIO.DataAccess.Repository.IRepository
     {
         IBrandaRepository Branda { get; }
         IAboutUsRepository AboutUs { get; }
+        IServicesRepository Services { get; }
+        IPortofolioRepository Portofolio { get; }
         void Save();
     }
 }

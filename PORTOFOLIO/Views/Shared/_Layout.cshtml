@@ -5,15 +5,15 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - PORTOFOLIO</title>
+    <title>@ViewData["Title"] - System Computama</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/PORTOFOLIO.styles.css" asp-append-version="true" />
-    <link rel="shortcut icon" href="https://idsolusi.com/wp-content/themes/idsolusi/images/favicon.ico?ver=2" type="image/x-icon">
-    <link rel="icon" href="https://idsolusi.com/wp-content/themes/idsolusi/images/favicon.ico?ver=2" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/systemcomputama.png" type="image/x-icon">
+    <link rel="icon" href="assets/img/systemcomputama.png" type="image/x-icon">
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+   @* <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">*@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
@@ -69,7 +69,7 @@
 
             <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary border-bottom box-shadow mb-3">
                 <div class="container-fluid">
-                    <a class="navbar-brand" asp-area="Admin" asp-controller="Branda" asp-action="Index"><i class="fa fa-fw fa-home"></i> PORTOFOLIO</a>
+                    <a class="navbar-brand" asp-area="Admin" asp-controller="Branda" asp-action="Index"><i class="fa fa-fw fa-home"></i> Software Computama</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -82,6 +82,12 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" asp-area="Admin" asp-controller="AboutUs" asp-action="Index">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="Admin" asp-controller="Services" asp-action="Index">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="Admin" asp-controller="Portofolio" asp-action="Index">Portfolio</a>
                             </li>
                         </ul>
                         <partial name="_LoginPartial" />
@@ -152,8 +158,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#contact">Contact Us</a>
 
-                            </li>
-
+                            </li>                       
                         </ul>
 
                     </div>

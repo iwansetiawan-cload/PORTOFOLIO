@@ -69,6 +69,10 @@
       "PackagePath": "staticwebassets\\assets\\img\\slide\\slide-3.jpg"
     },
     {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\assets\\img\\systemcomputama.png",
+      "PackagePath": "staticwebassets\\assets\\img\\systemcomputama.png"
+    },
+    {
       "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\assets\\img\\team\\team-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\team\\team-1.jpg"
     },
@@ -363,6 +367,50 @@
     {
       "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\logo.png",
       "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\1-Center.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\1-Center.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\1-Left.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\1-Left.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\1-Right.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\1-Right.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\2-Center.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\2-Center.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\2-Left.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\2-Left.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\2-Right.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\2-Right.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\3-Center.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\3-Center.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\3-Left.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\3-Left.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\3-Right.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\3-Right.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\services\\Hardware.jpg",
+      "PackagePath": "staticwebassets\\images\\services\\Hardware.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\services\\Software.jpg",
+      "PackagePath": "staticwebassets\\images\\services\\Software.jpg"
     },
     {
       "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\slide\\slide-1.jpg",

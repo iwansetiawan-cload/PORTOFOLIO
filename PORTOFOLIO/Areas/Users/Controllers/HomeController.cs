@@ -3,6 +3,7 @@ using PORTOFOLIO.DataAccess.Repository;
 using PORTOFOLIO.DataAccess.Repository.IRepository;
 using PORTOFOLIO.Models;
 using System.Diagnostics;
+using System.Drawing.Printing;
 using System.Reflection.Metadata;
 
 namespace PORTOFOLIO.Areas.Users.Controllers
@@ -46,6 +47,35 @@ namespace PORTOFOLIO.Areas.Users.Controllers
             string TextMision = _unitOfWork.AboutUs.GetFirstOrDefault().Mission;
             ViewBag.TextMision = TextMision.Length > 100 ? TextMision.Substring(0, pageSize) + " . . ." : TextMision;
             #endregion
+
+            #region Service
+            ViewBag.Servis_Title1 = _unitOfWork.Services.GetAll().Where(z => z.Flag == 1).Select(z => z.Title).FirstOrDefault();
+            ViewBag.Servis_Desc1 = _unitOfWork.Services.GetAll().Where(z => z.Flag == 1).Select(z => z.Content).FirstOrDefault();
+
+            ViewBag.Servis_Title2 = _unitOfWork.Services.GetAll().Where(z => z.Flag == 2).Select(z => z.Title).FirstOrDefault();
+            ViewBag.Servis_Desc2 = _unitOfWork.Services.GetAll().Where(z => z.Flag == 2).Select(z => z.Content).FirstOrDefault();
+
+            ViewBag.Servis_Title3 = _unitOfWork.Services.GetAll().Where(z => z.Flag == 3).Select(z => z.Title).FirstOrDefault();
+            ViewBag.Servis_Desc3 = _unitOfWork.Services.GetAll().Where(z => z.Flag == 3).Select(z => z.Content).FirstOrDefault();
+
+            ViewBag.Servis_Title4 = _unitOfWork.Services.GetAll().Where(z => z.Flag == 4).Select(z => z.Title).FirstOrDefault();
+            ViewBag.Servis_Desc4 = _unitOfWork.Services.GetAll().Where(z => z.Flag == 4).Select(z => z.Content).FirstOrDefault();
+
+            ViewBag.Servis_Title5 = _unitOfWork.Services.GetAll().Where(z => z.Flag == 5).Select(z => z.Title).FirstOrDefault();
+            ViewBag.Servis_Desc5 = _unitOfWork.Services.GetAll().Where(z => z.Flag == 5).Select(z => z.Content).FirstOrDefault();
+
+            ViewBag.Servis_Title6 = _unitOfWork.Services.GetAll().Where(z => z.Flag == 6).Select(z => z.Title).FirstOrDefault();
+            ViewBag.Servis_Desc6 = _unitOfWork.Services.GetAll().Where(z => z.Flag == 6).Select(z => z.Content).FirstOrDefault();
+            #endregion
+
+            #region Portfolio
+            ViewBag.Portfolio_Title1 = _unitOfWork.Portofolio.GetAll().Where(z => z.Flag == 1).Select(z => z.Title).FirstOrDefault();
+            ViewBag.Portfolio_Title2 = _unitOfWork.Portofolio.GetAll().Where(z => z.Flag == 2).Select(z => z.Title).FirstOrDefault();
+            ViewBag.Portfolio_Title3 = _unitOfWork.Portofolio.GetAll().Where(z => z.Flag == 3).Select(z => z.Title).FirstOrDefault();
+
+            ViewBag.Portfolio_Desc1 = _unitOfWork.Portofolio.GetAll().Where(z => z.Flag == 1 && z.Position == "Left").Select(z => z.Content).FirstOrDefault();
+            #endregion
+
             return View();
         }
 
@@ -64,5 +94,12 @@ namespace PORTOFOLIO.Areas.Users.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        public IActionResult AboutUs()
+        {
+            ViewBag.TextVision = _unitOfWork.AboutUs.GetFirstOrDefault().Vision;
+            ViewBag.TextMision = _unitOfWork.AboutUs.GetFirstOrDefault().Mission;
+            return View();
+        }
+
     }
 }
