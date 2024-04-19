@@ -12,6 +12,7 @@ namespace PORTOFOLIO.DataAccess.Repository.IRepository
         IAboutUsRepository AboutUs { get; }
         IServicesRepository Services { get; }
         IPortofolioRepository Portofolio { get; }
+        ITeamRepository Team { get; }
         void Save();
     }
 }

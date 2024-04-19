@@ -16,6 +16,7 @@ public class ApplicationDbContext : IdentityDbContext<IdentityUser>
     public DbSet<AboutUs> AboutUs { get; set; }
     public DbSet<Services> Services { get; set; }
     public DbSet<Portofolio> Portofolio { get; set; }
+    public DbSet<Team> Team { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

@@ -140,7 +140,7 @@
             </div>
         </section><!-- End About Us Section -->
         <!-- ======= About Lists Section ======= -->
-        <section class="about-lists">
+        @*<section class="about-lists">
             <div class="container">
 
                 <div class="row no-gutters">
@@ -184,7 +184,7 @@
                 </div>
 
             </div>
-        </section><!-- End About Lists Section -->
+        </section><!-- End About Lists Section -->*@
         <!-- ======= Counts Section ======= -->
         <section class="counts section-bg">
             <div class="container">
@@ -431,17 +431,17 @@
 
                 <div class="section-title">
                     <h2>Our Team</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
+                    <p>@ViewBag.Team_TextHeader</p>
                 </div>
 
                 <div class="row">
 
                     <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
                         <div class="member">
-                            <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+                            <div class="pic"><img src="~/images/team/team-1.jpg" class="img-fluid" alt=""></div>
                             <div class="member-info">
-                                <h4>Walter White</h4>
-                                <span>Chief Executive Officer</span>
+                                <h4>@ViewBag.Team_Name1</h4>
+                                <span>@ViewBag.Team_Jobs1</span>
                                 <div class="social">
                                     <a href=""><i class="icofont-twitter"></i></a>
                                     <a href=""><i class="icofont-facebook"></i></a>
@@ -454,10 +454,10 @@
 
                     <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="member">
-                            <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+                            <div class="pic"><img src="~/images/team/team-2.jpg" class="img-fluid" alt=""></div>
                             <div class="member-info">
-                                <h4>Sarah Jhonson</h4>
-                                <span>Product Manager</span>
+                                <h4>@ViewBag.Team_Name2</h4>
+                                <span>@ViewBag.Team_Jobs2</span>
                                 <div class="social">
                                     <a href=""><i class="icofont-twitter"></i></a>
                                     <a href=""><i class="icofont-facebook"></i></a>
@@ -470,10 +470,10 @@
 
                     <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="member">
-                            <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+                            <div class="pic"><img src="~/images/team/team-3.jpg" class="img-fluid" alt=""></div>
                             <div class="member-info">
-                                <h4>William Anderson</h4>
-                                <span>CTO</span>
+                                <h4>@ViewBag.Team_Name3</h4>
+                                <span>@ViewBag.Team_Jobs3</span>
                                 <div class="social">
                                     <a href=""><i class="icofont-twitter"></i></a>
                                     <a href=""><i class="icofont-facebook"></i></a>
@@ -486,10 +486,10 @@
 
                     <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="member">
-                            <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+                            <div class="pic"><img src="~/images/team/team-4.jpg" class="img-fluid" alt=""></div>
                             <div class="member-info">
-                                <h4>Amanda Jepson</h4>
-                                <span>Accountant</span>
+                                <h4>@ViewBag.Team_Name4</h4>
+                                <span>@ViewBag.Team_Jobs4</span>
                                 <div class="social">
                                     <a href=""><i class="icofont-twitter"></i></a>
                                     <a href=""><i class="icofont-facebook"></i></a>
@@ -505,7 +505,7 @@
             </div>
         </section><!-- End Our Team Section -->
         <!-- ======= Frequently Asked Questions Section ======= -->
-        <section id="faq" class="faq section-bg">
+        @*<section id="faq" class="faq section-bg">
             <div class="container">
 
                 <div class="section-title">
@@ -559,7 +559,7 @@
                 </div>
 
             </div>
-        </section><!-- End Frequently Asked Questions Section -->
+        </section><!-- End Frequently Asked Questions Section -->*@
         <!-- ======= Contact Us Section ======= -->
         <section id="contact" class="contact">
             <div class="container">
@@ -574,7 +574,7 @@
                         <div class="info-box">
                             <i class="bx bx-map"></i>
                             <h3>Our Address</h3>
-                            <p>A108 Adam Street, New York, NY 535022</p>
+                            <p>Jakarta</p>
                         </div>
                     </div>
 
@@ -582,7 +582,7 @@
                         <div class="info-box">
                             <i class="bx bx-envelope"></i>
                             <h3>Email Us</h3>
-                            <p>info@example.com<br>contact@example.com</p>
+                            <p>setti@yahoo.com<br>setti@yahoo.com</p>
                         </div>
                     </div>
 
@@ -590,7 +590,7 @@
                         <div class="info-box ">
                             <i class="bx bx-phone-call"></i>
                             <h3>Call Us</h3>
-                            <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+                            <p>+62 8128927785<br>+62 8128927785</p>
                         </div>
                     </div>
 

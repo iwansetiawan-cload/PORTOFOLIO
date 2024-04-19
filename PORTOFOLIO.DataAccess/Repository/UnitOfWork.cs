@@ -19,11 +19,13 @@ namespace PORTOFOLIO.DataAccess.Repository
             AboutUs = new AboutUsRepository(_db); 
             Services = new ServicesRepository(_db);
             Portofolio = new PortofolioRepository(_db);
+            Team = new TeamRepository(_db);
         }
         public IBrandaRepository Branda { get; private set; }
         public IAboutUsRepository AboutUs { get; private set; }        
         public IServicesRepository Services { get; private set; }
         public IPortofolioRepository Portofolio { get; private set; }
+        public ITeamRepository Team { get; private set; }
 
         public void Dispose()
         {

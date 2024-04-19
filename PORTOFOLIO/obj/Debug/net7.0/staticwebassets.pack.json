@@ -429,6 +429,22 @@
       "PackagePath": "staticwebassets\\images\\slide\\slide-3.jpg"
     },
     {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\team\\team-1.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\team-1.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\team\\team-2.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\team-2.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\team\\team-3.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\team-3.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\team\\team-4.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\team-4.jpg"
+    },
+    {
       "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\js\\e19c476714.js",
       "PackagePath": "staticwebassets\\js\\e19c476714.js"
     },
