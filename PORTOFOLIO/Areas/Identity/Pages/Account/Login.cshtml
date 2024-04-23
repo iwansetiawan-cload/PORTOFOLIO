@@ -15,9 +15,15 @@
                 <div class="py-2 input-group">
                     <input asp-for="Input.Password" placeholder="Password..." type="password" class="form-control" />
                 </div>                         
-                <button type="submit" class="btn btn-success form-control"><i class="fas fa-sign-in-alt"></i> Sign in</button>
+                <button type="submit" class="btn btn-primary form-control"><i class="fas fa-sign-in-alt"></i> Sign in</button>
                 <div asp-validation-summary="All" class="text-danger"></div>
-
+                <div>
+                  
+                    <p>
+                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
+                    </p>
+                  
+                </div>
             </form>
         </div>
 

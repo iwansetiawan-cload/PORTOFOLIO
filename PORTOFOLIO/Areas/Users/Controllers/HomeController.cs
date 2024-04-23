@@ -26,30 +26,53 @@ namespace PORTOFOLIO.Areas.Users.Controllers
             const int pageSize = 100;
             ViewBag.TitleSlide1 = _unitOfWork.Branda.GetAll().Where(z => z.Position == "1").Select(z => z.Title).FirstOrDefault();
             string textSlide1 = _unitOfWork.Branda.GetAll().Where(z => z.Position == "1").Select(z => z.Content).FirstOrDefault();
-            ViewBag.TextSlide1_ = textSlide1.Substring(0, pageSize) + " . . .";
+            ViewBag.TextSlide1_ = textSlide1 != null ? textSlide1.Substring(0, pageSize) + " . . ." : textSlide1;
             ViewBag.TextSlide1 = textSlide1;
 
             ViewBag.TitleSlide2 = _unitOfWork.Branda.GetAll().Where(z => z.Position == "2").Select(z => z.Title).FirstOrDefault();
             string textSlide2 = _unitOfWork.Branda.GetAll().Where(z => z.Position == "2").Select(z => z.Content).FirstOrDefault();
-            ViewBag.TextSlide2_ = textSlide2.Substring(0, pageSize) + " . . .";
+            ViewBag.TextSlide2_ = textSlide2 != null ? textSlide2.Substring(0, pageSize) + " . . ." : textSlide2;
             ViewBag.TextSlide2 = textSlide2;
 
             ViewBag.TitleSlide3 = _unitOfWork.Branda.GetAll().Where(z => z.Position == "3").Select(z => z.Title).FirstOrDefault();
             string textSlide3 = _unitOfWork.Branda.GetAll().Where(z => z.Position == "3").Select(z => z.Content).FirstOrDefault();
-            ViewBag.TextSlide3_ = textSlide3.Substring(0, pageSize) + " . . .";
+            ViewBag.TextSlide3_ = textSlide3 != null ? textSlide3.Substring(0, pageSize) + " . . ." : textSlide3;
             ViewBag.TextSlide3 = textSlide3;
 
             #region About Us
-            string Description = _unitOfWork.AboutUs.GetFirstOrDefault().Description;
-            ViewBag.Description = Description.Length > 100 ? Description.Substring(0, pageSize) + " . . ." : Description;
-            string TextVision = _unitOfWork.AboutUs.GetFirstOrDefault().Vision;
-            ViewBag.TextVision = TextVision.Length > 100 ? TextVision.Substring(0, pageSize) + " . . ." : TextVision;
-            string TextMision = _unitOfWork.AboutUs.GetFirstOrDefault().Mission;
-            ViewBag.TextMision = TextMision.Length > 100 ? TextMision.Substring(0, pageSize) + " . . ." : TextMision;
+            string Description = _unitOfWork.AboutUs.GetFirstOrDefault() != null ? _unitOfWork.AboutUs.GetFirstOrDefault().Description : null;
+            if (Description != null)
+            {
+                ViewBag.Description = Description.Length > 100 ? Description.Substring(0, pageSize) + " . . ." : Description;
+            }
+            else
+            {
+                ViewBag.Description = "";
+            }
 
-            ViewBag.AboutUsDesc = _unitOfWork.AboutUs.GetFirstOrDefault().Description;
-            ViewBag.AboutUsVision = _unitOfWork.AboutUs.GetFirstOrDefault().Vision;
-            ViewBag.AboutUsMision = _unitOfWork.AboutUs.GetFirstOrDefault().Mission;
+            string TextVision = _unitOfWork.AboutUs.GetFirstOrDefault() != null ? _unitOfWork.AboutUs.GetFirstOrDefault().Vision : null;
+            if (TextVision != null)
+            {
+                ViewBag.TextVision = TextVision.Length > 100 ? TextVision.Substring(0, pageSize) + " . . ." : TextVision;
+            }
+            else
+            {
+                ViewBag.TextVision = "";
+            }
+           
+            string TextMision = _unitOfWork.AboutUs.GetFirstOrDefault() != null ? _unitOfWork.AboutUs.GetFirstOrDefault().Mission : null;
+            if (TextMision != null)
+            {
+                ViewBag.TextMision = TextMision.Length > 100 ? TextMision.Substring(0, pageSize) + " . . ." : TextMision;
+            }
+            else
+            {
+                ViewBag.TextMision = "";
+            }
+
+            ViewBag.AboutUsDesc = _unitOfWork.AboutUs.GetFirstOrDefault() != null ? _unitOfWork.AboutUs.GetFirstOrDefault().Description : "";
+            ViewBag.AboutUsVision = _unitOfWork.AboutUs.GetFirstOrDefault() != null ? _unitOfWork.AboutUs.GetFirstOrDefault().Vision : "";
+            ViewBag.AboutUsMision = _unitOfWork.AboutUs.GetFirstOrDefault() != null ? _unitOfWork.AboutUs.GetFirstOrDefault().Mission : "";
             #endregion
 
             #region Service
@@ -94,7 +117,7 @@ namespace PORTOFOLIO.Areas.Users.Controllers
             #region Team
             ViewBag.Team_Name1 = _unitOfWork.Team.GetAll().Where(z => z.Flag == 1).Select(z => z.Name).FirstOrDefault();
             ViewBag.Team_Jobs1 = _unitOfWork.Team.GetAll().Where(z => z.Flag == 1).Select(z => z.Jobs).FirstOrDefault();
-            ViewBag.Team_TextHeader = _unitOfWork.MsUDC.GetAll().Where(z => z.EntryKey == "Header" && z.Text1 == "MenuTeam").Select(x=>x.Text3).FirstOrDefault();
+            ViewBag.Team_TextHeader = _unitOfWork.MsUDC.GetAll().Where(z => z.EntryKey == "Header" && z.Text1 == "MenuTeam").Select(x => x.Text3).FirstOrDefault();
 
             ViewBag.Team_Name2 = _unitOfWork.Team.GetAll().Where(z => z.Flag == 2).Select(z => z.Name).FirstOrDefault();
             ViewBag.Team_Jobs2 = _unitOfWork.Team.GetAll().Where(z => z.Flag == 2).Select(z => z.Jobs).FirstOrDefault();
