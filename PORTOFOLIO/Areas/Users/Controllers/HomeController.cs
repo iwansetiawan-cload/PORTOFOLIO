@@ -46,6 +46,10 @@ namespace PORTOFOLIO.Areas.Users.Controllers
             ViewBag.TextVision = TextVision.Length > 100 ? TextVision.Substring(0, pageSize) + " . . ." : TextVision;
             string TextMision = _unitOfWork.AboutUs.GetFirstOrDefault().Mission;
             ViewBag.TextMision = TextMision.Length > 100 ? TextMision.Substring(0, pageSize) + " . . ." : TextMision;
+
+            ViewBag.AboutUsDesc = _unitOfWork.AboutUs.GetFirstOrDefault().Description;
+            ViewBag.AboutUsVision = _unitOfWork.AboutUs.GetFirstOrDefault().Vision;
+            ViewBag.AboutUsMision = _unitOfWork.AboutUs.GetFirstOrDefault().Mission;
             #endregion
 
             #region Service
@@ -84,7 +88,7 @@ namespace PORTOFOLIO.Areas.Users.Controllers
             ViewBag.Portfolio_Img3_Center = _unitOfWork.Portofolio.GetAll().Where(z => z.Flag == 3 && z.Position == "Center").Select(z => z.Photo).FirstOrDefault();
             ViewBag.Portfolio_Img3_Right = _unitOfWork.Portofolio.GetAll().Where(z => z.Flag == 3 && z.Position == "Right").Select(z => z.Photo).FirstOrDefault();
 
-            ViewBag.Portfolio_Desc1 = _unitOfWork.Portofolio.GetAll().Where(z => z.Flag == 1 && z.Position == "Left").Select(z => z.Content).FirstOrDefault();
+            ViewBag.Portfolio_TextHeader = _unitOfWork.MsUDC.GetAll().Where(z => z.EntryKey == "Header" && z.Text1 == "MenuPortfolio").Select(x => x.Text3).FirstOrDefault();
             #endregion
 
             #region Team

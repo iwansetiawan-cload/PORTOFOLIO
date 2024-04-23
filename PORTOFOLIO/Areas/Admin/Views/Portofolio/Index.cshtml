@@ -13,6 +13,39 @@
                 </div>
             </div>
         </div>
+        <div id="accordion" class="col-12 pt-2">
+            <div class="card">
+                <div class="card-header d-md-flex justify-content-md-end">
+                    <a class="btn" data-bs-toggle="collapse" href="#textHeader">
+                        Input Header  <i class="indicator fa fa-chevron-circle-down"></i>
+                    </a>
+                </div>
+
+                <div class="collapse" id="textHeader">
+                    <br />
+                    <div class="container">
+                        <div class="col-12 pt-2">
+                            <div class="form-group row">
+                                @Html.LabelFor(model => model.Content, "Text Header", htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-10">
+                                    <textarea asp-for="Content" class="form-control" id="textValues"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                          
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <button type="button" class="btn btn-success" onclick="UpsertHeader()">Save</button>
+                                </div>
+                            </div>
+                         
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
         <div class="card-body p-4">
             <div class="row pb-3">
                 <div class="col-6">
@@ -114,6 +147,23 @@
             });
         }
 
+        function UpsertHeader() {
+            var id = $('#textValues').val();
+            var url = "/Admin/Portofolio/UpsertHeader/" + id;
+            $.ajax({
+                type: "POST",
+                url: url,
+                success: function (data) {
+                    if (data.success) {
+                        toastr.success(data.message);
+                        dataTable.ajax.reload();
+                    }
+                    else {
+                        toastr.error(data.message);
+                    }
+                }
+            });
+        }
     </script>
 
 

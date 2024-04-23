@@ -3,6 +3,10 @@ using Microsoft.AspNetCore.Mvc.ModelBinding.Metadata;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using PORTOFOLIO.DataAccess.Repository.IRepository;
 using PORTOFOLIO.Models;
+using System.Drawing.Drawing2D;
+using System.Drawing;
+using System.Security.Claims;
+using System.Drawing.Imaging;
 
 namespace PORTOFOLIO.Areas.Admin.Controllers
 {
@@ -93,6 +97,7 @@ namespace PORTOFOLIO.Areas.Admin.Controllers
                 }
                 string webRootPath = _hostEnvironment.WebRootPath;
                 var files = HttpContext.Request.Form.Files;
+                string filenames = "";
                 if (files.Count > 0)
                 {
                     var uploads = Path.Combine(webRootPath, @"images\portfolio");
@@ -109,17 +114,66 @@ namespace PORTOFOLIO.Areas.Admin.Controllers
                         {
                             System.IO.File.Delete(imagePath);
                         }
+                        var imagePathOld = Path.Combine(webRootPath, vm.Photo.TrimStart('\\').Replace("_800x600.jpg", ".jpg"));
+                        if (System.IO.File.Exists(imagePathOld))
+                        {
+                            System.IO.File.Delete(imagePathOld);
+                        }
                     }
                     using (var filesStreams = new FileStream(Path.Combine(uploads, fileName + extenstion), FileMode.Create))
                     {
                         files[0].CopyTo(filesStreams);
+                       
                     }
-                    vm.Photo = @"\images\portfolio\" +  fileName + extenstion;
+                    Resize(Path.Combine(uploads, fileName + extenstion), 800, 600);
+                                       
+                    filenames = @"\images\portfolio\" +  fileName + extenstion;
+                    vm.Photo = filenames.Replace(".jpg", "_800x600.jpg");
                 }
+               
                 _unitOfWork.Save();
                 return RedirectToAction(nameof(Index));
             }
             return View(vm);
+        }
+        public static void Resize(string srcPath, int width, int height)
+        {
+            Image image = Image.FromFile(srcPath);
+            Bitmap resultImage = Resize(image, width, height);
+            resultImage.Save(srcPath.Replace(".jpg", "_" + width + "x" + height + ".jpg"));
+        }
+        public static Bitmap Resize(Image image, int width, int height)
+        {
+
+            var destRect = new Rectangle(0, 0, width, height);
+            var destImage = new Bitmap(width, height);
+
+            destImage.SetResolution(image.HorizontalResolution, image.VerticalResolution);
+
+            using (var graphics = Graphics.FromImage(destImage))
+            {
+                graphics.CompositingMode = CompositingMode.SourceCopy;
+                graphics.CompositingQuality = CompositingQuality.HighQuality;
+                graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                graphics.SmoothingMode = SmoothingMode.HighQuality;
+                graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
+
+                using (var wrapMode = new ImageAttributes())
+                {
+                    wrapMode.SetWrapMode(WrapMode.TileFlipXY);
+                    graphics.DrawImage(image, destRect, 0, 0, image.Width, image.Height, GraphicsUnit.Pixel, wrapMode);
+                }
+            }
+
+            return destImage;
+        }
+        public static Image resizeImage(Image image, int new_height, int new_width)
+        {
+            Bitmap new_image = new Bitmap(new_width, new_height);
+            Graphics g = Graphics.FromImage((Image)new_image);
+            g.InterpolationMode = InterpolationMode.High;
+            g.DrawImage(image, 0, 0, new_width, new_height);
+            return new_image;
         }
         [HttpDelete]
         public IActionResult Delete(int id)
@@ -135,6 +189,44 @@ namespace PORTOFOLIO.Areas.Admin.Controllers
 
             TempData["Success"] = "Portfolio successfully deleted";
             return Json(new { success = true, message = "Delete Successful" });
+
+        }
+        [HttpPost]
+        public async Task<IActionResult> UpsertHeader(string id)
+        {
+            try
+            {
+                var claimsIdentity = (ClaimsIdentity)User.Identity;
+                var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+                var user = _unitOfWork.ApplicationUser.GetFirstOrDefault(u => u.Id == claim.Value);
+                MsUDC msUDC = _unitOfWork.MsUDC.GetAll().Where(z => z.EntryKey == "Header" && z.Text1 == "MenuPortfolio").FirstOrDefault();
+
+                if (msUDC != null)
+                {
+                    msUDC.Text3 = id;
+                    msUDC.Creator = claimsIdentity.Name;
+                    msUDC.LastModifyDate = DateTime.Now;
+                    _unitOfWork.MsUDC.Update(msUDC);
+                }
+                else
+                {
+                    MsUDC newmsUDC = new MsUDC();
+                    newmsUDC.EntryKey = "Header";
+                    newmsUDC.Text1 = "MenuPortfolio";
+                    newmsUDC.Text3 = id;
+                    newmsUDC.Creator = claimsIdentity.Name;
+                    newmsUDC.LastModifyDate = DateTime.Now;
+                    _unitOfWork.MsUDC.Add(newmsUDC);
+                }
+                _unitOfWork.Save();
+                TempData["Success"] = "Successfully Update Header";
+                return Json(new { success = true, message = "Update Header Successful" });
+            }
+            catch (Exception)
+            {
+                TempData["Failed"] = "Error Update Header";
+                return Json(new { success = false, message = "Update Header Error" });
+            }
 
         }
     }

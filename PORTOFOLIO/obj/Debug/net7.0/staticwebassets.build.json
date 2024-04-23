@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oFYWVHrlWX+h9gg34+uHcYJvvJKMCWQxZYzeag9M4oM=",
+  "Hash": "8KKXzG1BmH8H6I0tbnxf8YrBb4RhjcrDvywpp6zzxP4=",
   "Source": "PORTOFOLIO",
   "BasePath": "_content/PORTOFOLIO",
   "Mode": "Default",
@@ -2703,6 +2703,40 @@
       "OriginalItemSpec": "wwwroot\\images\\portfolio\\3-Center.jpg"
     },
     {
+      "Identity": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\3cf976a0-eff6-4d79-8030-4b407f9cc387.jpg",
+      "SourceId": "PORTOFOLIO",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\",
+      "BasePath": "_content/PORTOFOLIO",
+      "RelativePath": "images/portfolio/3cf976a0-eff6-4d79-8030-4b407f9cc387.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\portfolio\\3cf976a0-eff6-4d79-8030-4b407f9cc387.jpg"
+    },
+    {
+      "Identity": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\3cf976a0-eff6-4d79-8030-4b407f9cc387_800x600.jpg",
+      "SourceId": "PORTOFOLIO",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\",
+      "BasePath": "_content/PORTOFOLIO",
+      "RelativePath": "images/portfolio/3cf976a0-eff6-4d79-8030-4b407f9cc387_800x600.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\portfolio\\3cf976a0-eff6-4d79-8030-4b407f9cc387_800x600.jpg"
+    },
+    {
       "Identity": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\3-Left.jpg",
       "SourceId": "PORTOFOLIO",
       "SourceType": "Discovered",
@@ -2735,23 +2769,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\portfolio\\3-Right.jpg"
-    },
-    {
-      "Identity": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\4ca628fd-75af-44fc-a0e2-c0d453e5190f.jpg",
-      "SourceId": "PORTOFOLIO",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\",
-      "BasePath": "_content/PORTOFOLIO",
-      "RelativePath": "images/portfolio/4ca628fd-75af-44fc-a0e2-c0d453e5190f.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\portfolio\\4ca628fd-75af-44fc-a0e2-c0d453e5190f.jpg"
     },
     {
       "Identity": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\5ef522d5-4cd9-4da3-a698-d13783f62f74.jpg",
@@ -2839,12 +2856,12 @@
       "OriginalItemSpec": "wwwroot\\images\\portfolio\\d56665cc-657f-4c17-8ff5-d5a78d9a5a49.jpg"
     },
     {
-      "Identity": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\df9ddc36-1805-4034-844d-88f100c10dec.jpg",
+      "Identity": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\f4a388d0-a2c4-4809-a18f-c670286b9ef6.jpg",
       "SourceId": "PORTOFOLIO",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\",
       "BasePath": "_content/PORTOFOLIO",
-      "RelativePath": "images/portfolio/df9ddc36-1805-4034-844d-88f100c10dec.jpg",
+      "RelativePath": "images/portfolio/f4a388d0-a2c4-4809-a18f-c670286b9ef6.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2853,7 +2870,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\portfolio\\df9ddc36-1805-4034-844d-88f100c10dec.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\portfolio\\f4a388d0-a2c4-4809-a18f-c670286b9ef6.jpg"
+    },
+    {
+      "Identity": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\f4a388d0-a2c4-4809-a18f-c670286b9ef6_800x600.jpg",
+      "SourceId": "PORTOFOLIO",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\",
+      "BasePath": "_content/PORTOFOLIO",
+      "RelativePath": "images/portfolio/f4a388d0-a2c4-4809-a18f-c670286b9ef6_800x600.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\portfolio\\f4a388d0-a2c4-4809-a18f-c670286b9ef6_800x600.jpg"
     },
     {
       "Identity": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\fa2c7a92-8eb9-4f3d-ab54-88bc24c14dc0.jpg",
