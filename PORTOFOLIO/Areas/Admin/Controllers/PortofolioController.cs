@@ -96,13 +96,15 @@ namespace PORTOFOLIO.Areas.Admin.Controllers
                 if (files.Count > 0)
                 {
                     var uploads = Path.Combine(webRootPath, @"images\portfolio");
-                    string fileName = Convert.ToString(vm.Flag) + "-" + vm.Position;
-                    var extenstion = ".jpg";
+                    //string fileName = Convert.ToString(vm.Flag) + "-" + vm.Position;
+                    //var extenstion = ".jpg";
+                    string fileName = Guid.NewGuid().ToString();
+                    var extenstion = Path.GetExtension(files[0].FileName);
 
                     if (vm.Photo != null)
                     {
                         //this is an edit and we need to remove old image
-                        var imagePath = Path.Combine(uploads, vm.Photo.TrimStart('\\'));
+                        var imagePath = Path.Combine(webRootPath, vm.Photo.TrimStart('\\'));
                         if (System.IO.File.Exists(imagePath))
                         {
                             System.IO.File.Delete(imagePath);
@@ -112,7 +114,7 @@ namespace PORTOFOLIO.Areas.Admin.Controllers
                     {
                         files[0].CopyTo(filesStreams);
                     }
-                    vm.Photo = fileName + extenstion;
+                    vm.Photo = @"\images\portfolio\" +  fileName + extenstion;
                 }
                 _unitOfWork.Save();
                 return RedirectToAction(nameof(Index));

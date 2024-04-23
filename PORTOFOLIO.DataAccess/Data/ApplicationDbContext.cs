@@ -17,6 +17,7 @@ public class ApplicationDbContext : IdentityDbContext<IdentityUser>
     public DbSet<Services> Services { get; set; }
     public DbSet<Portofolio> Portofolio { get; set; }
     public DbSet<Team> Team { get; set; }
+    public DbSet<MsUDC> MsUDC { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

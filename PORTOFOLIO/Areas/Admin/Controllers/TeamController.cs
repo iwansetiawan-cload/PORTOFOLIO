@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using PORTOFOLIO.DataAccess.Repository.IRepository;
 using PORTOFOLIO.Models;
+using System.Security.Claims;
 
 namespace PORTOFOLIO.Areas.Admin.Controllers
 {
@@ -21,6 +22,11 @@ namespace PORTOFOLIO.Areas.Admin.Controllers
         {
             return View();
         }
+        //[HttpPost]
+        //public IActionResult Index(Team vm)
+        //{
+        //    return View();
+        //}
         [HttpGet]
         public IActionResult GetAll()
         {
@@ -135,6 +141,44 @@ namespace PORTOFOLIO.Areas.Admin.Controllers
             TempData["Success"] = "Team successfully deleted";
             return Json(new { success = true, message = "Delete Successful" });
 
+        }
+        [HttpPost]
+        public async Task<IActionResult> UpsertHeader(string id)
+        {
+            try
+            {
+                var claimsIdentity = (ClaimsIdentity)User.Identity;
+                var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+                var user = _unitOfWork.ApplicationUser.GetFirstOrDefault(u => u.Id == claim.Value);
+                MsUDC msUDC = _unitOfWork.MsUDC.GetAll().Where(z=>z.EntryKey == "Header" && z.Text1 == "MenuTeam").FirstOrDefault();
+
+                if (msUDC != null)
+                {
+                    msUDC.Text3 = id;
+                    msUDC.Creator = claimsIdentity.Name;
+                    msUDC.LastModifyDate = DateTime.Now;
+                    _unitOfWork.MsUDC.Update(msUDC);
+                }
+                else
+                { 
+                    MsUDC newmsUDC = new MsUDC();
+                    newmsUDC.EntryKey = "Header";
+                    newmsUDC.Text1 = "MenuTeam";
+                    newmsUDC.Text3 = id;
+                    newmsUDC.Creator = claimsIdentity.Name;
+                    newmsUDC.LastModifyDate = DateTime.Now;
+                    _unitOfWork.MsUDC.Add(newmsUDC);
+                }
+                _unitOfWork.Save();
+                TempData["Success"] = "Successfully Update Header";
+                return Json(new { success = true, message = "Update Header Successful" });
+            }
+            catch (Exception)
+            {
+                TempData["Failed"] = "Error Update Header";
+                return Json(new { success = false, message = "Update Header Error" });
+            }
+         
         }
     }
 }

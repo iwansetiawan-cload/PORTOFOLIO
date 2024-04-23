@@ -70,8 +70,19 @@ namespace PORTOFOLIO.Areas.Users.Controllers
 
             #region Portfolio
             ViewBag.Portfolio_Title1 = _unitOfWork.Portofolio.GetAll().Where(z => z.Flag == 1).Select(z => z.Title).FirstOrDefault();
+            ViewBag.Portfolio_Img1_Left = _unitOfWork.Portofolio.GetAll().Where(z => z.Flag == 1 && z.Position == "Left").Select(z => z.Photo).FirstOrDefault();
+            ViewBag.Portfolio_Img1_Center = _unitOfWork.Portofolio.GetAll().Where(z => z.Flag == 1 && z.Position == "Center").Select(z => z.Photo).FirstOrDefault();
+            ViewBag.Portfolio_Img1_Right = _unitOfWork.Portofolio.GetAll().Where(z => z.Flag == 1 && z.Position == "Right").Select(z => z.Photo).FirstOrDefault();
+
             ViewBag.Portfolio_Title2 = _unitOfWork.Portofolio.GetAll().Where(z => z.Flag == 2).Select(z => z.Title).FirstOrDefault();
+            ViewBag.Portfolio_Img2_Left = _unitOfWork.Portofolio.GetAll().Where(z => z.Flag == 2 && z.Position == "Left").Select(z => z.Photo).FirstOrDefault();
+            ViewBag.Portfolio_Img2_Center = _unitOfWork.Portofolio.GetAll().Where(z => z.Flag == 2 && z.Position == "Center").Select(z => z.Photo).FirstOrDefault();
+            ViewBag.Portfolio_Img2_Right = _unitOfWork.Portofolio.GetAll().Where(z => z.Flag == 2 && z.Position == "Right").Select(z => z.Photo).FirstOrDefault();
+
             ViewBag.Portfolio_Title3 = _unitOfWork.Portofolio.GetAll().Where(z => z.Flag == 3).Select(z => z.Title).FirstOrDefault();
+            ViewBag.Portfolio_Img3_Left = _unitOfWork.Portofolio.GetAll().Where(z => z.Flag == 3 && z.Position == "Left").Select(z => z.Photo).FirstOrDefault();
+            ViewBag.Portfolio_Img3_Center = _unitOfWork.Portofolio.GetAll().Where(z => z.Flag == 3 && z.Position == "Center").Select(z => z.Photo).FirstOrDefault();
+            ViewBag.Portfolio_Img3_Right = _unitOfWork.Portofolio.GetAll().Where(z => z.Flag == 3 && z.Position == "Right").Select(z => z.Photo).FirstOrDefault();
 
             ViewBag.Portfolio_Desc1 = _unitOfWork.Portofolio.GetAll().Where(z => z.Flag == 1 && z.Position == "Left").Select(z => z.Content).FirstOrDefault();
             #endregion
@@ -79,7 +90,7 @@ namespace PORTOFOLIO.Areas.Users.Controllers
             #region Team
             ViewBag.Team_Name1 = _unitOfWork.Team.GetAll().Where(z => z.Flag == 1).Select(z => z.Name).FirstOrDefault();
             ViewBag.Team_Jobs1 = _unitOfWork.Team.GetAll().Where(z => z.Flag == 1).Select(z => z.Jobs).FirstOrDefault();
-            ViewBag.Team_TextHeader = _unitOfWork.Team.GetAll().Where(z => z.Flag == 1).Select(z => z.TextHeader).FirstOrDefault();
+            ViewBag.Team_TextHeader = _unitOfWork.MsUDC.GetAll().Where(z => z.EntryKey == "Header" && z.Text1 == "MenuTeam").Select(x=>x.Text3).FirstOrDefault();
 
             ViewBag.Team_Name2 = _unitOfWork.Team.GetAll().Where(z => z.Flag == 2).Select(z => z.Name).FirstOrDefault();
             ViewBag.Team_Jobs2 = _unitOfWork.Team.GetAll().Where(z => z.Flag == 2).Select(z => z.Jobs).FirstOrDefault();

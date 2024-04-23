@@ -273,7 +273,7 @@
 
             </div>
         </section><!-- End Services Section -->
-        <!-- ======= Our Portfolio Section ======= -->
+        <!-- ======= Our Portfolio Section ======= --> 
         <section id="portfolio" class="portfolio section-bg">
             <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -297,12 +297,13 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div class="portfolio-wrap">
-                            <img src="~/images/portfolio/1-Left.jpg" class="img-fluid" alt="">
+                            <img src="@ViewBag.Portfolio_Img1_Left" class="img-fluid" alt="">
+                          @*  <img src="@ViewBag.Portfolio_Img1" alt="" width="350" height="265">*@
                             <div class="portfolio-info">
                                 <h4>@ViewBag.Portfolio_Title1 1</h4>
                                 <p>@ViewBag.Portfolio_Title1</p>
                                 <div class="portfolio-links">
-                                    <a href="~/images/portfolio/1-Left.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-eye"></i></a>
+                                    <a href="@ViewBag.Portfolio_Img1_Left<" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-eye"></i></a>
                                     <a href="#" title="More Details"><i class="icofont-external-link"></i></a>
                                 </div>
                             </div>
@@ -311,12 +312,12 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div class="portfolio-wrap">
-                            <img src="~/images/portfolio/3-Left.jpg" class="img-fluid" alt="">
+                            <img src="@ViewBag.Portfolio_Img3_Left" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>@ViewBag.Portfolio_Title3 1</h4>
                                 <p>@ViewBag.Portfolio_Title3</p>
                                 <div class="portfolio-links">
-                                    <a href="~/images/portfolio/3-Left.jpg" data-gall="portfolioGallery" class="venobox" title="@ViewBag.Portfolio_Title3 1"><i class="icofont-eye"></i></a>
+                                    <a href="@ViewBag.Portfolio_Img3_Left" data-gall="portfolioGallery" class="venobox" title="@ViewBag.Portfolio_Title3 1"><i class="icofont-eye"></i></a>
                                     <a href="#" title="More Details"><i class="icofont-external-link"></i></a>
                                 </div>
                             </div>
@@ -325,12 +326,12 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div class="portfolio-wrap">
-                            <img src="~/images/portfolio/1-Center.jpg" class="img-fluid" alt="">
+                            <img src="@ViewBag.Portfolio_Img1_Center" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>@ViewBag.Portfolio_Title1 2</h4>
                                 <p>@ViewBag.Portfolio_Title1</p>
                                 <div class="portfolio-links">
-                                    <a href="~/images/portfolio/1-Center.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="icofont-eye"></i></a>
+                                    <a href="@ViewBag.Portfolio_Img1_Center" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="icofont-eye"></i></a>
                                     <a href="#" title="More Details"><i class="icofont-external-link"></i></a>
                                 </div>
                             </div>
@@ -339,12 +340,12 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div class="portfolio-wrap">
-                            <img src="~/images/portfolio/2-Left.jpg" class="img-fluid" alt="">
+                            <img src="@ViewBag.Portfolio_Img2_Left" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>@ViewBag.Portfolio_Title2 1</h4>
                                 <p>@ViewBag.Portfolio_Title2</p>
                                 <div class="portfolio-links">
-                                    <a href="~/images/portfolio/2-Left.jpg" data-gall="portfolioGallery" class="venobox" title="@ViewBag.Portfolio_Title2 1"><i class="icofont-eye"></i></a>
+                                    <a href="@ViewBag.Portfolio_Img2_Left" data-gall="portfolioGallery" class="venobox" title="@ViewBag.Portfolio_Title2 1"><i class="icofont-eye"></i></a>
                                     <a href="#" title="More Details"><i class="icofont-external-link"></i></a>
                                 </div>
                             </div>
@@ -353,12 +354,12 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div class="portfolio-wrap">
-                            <img src="~/images/portfolio/3-Center.jpg" class="img-fluid" alt="">
+                            <img src="@ViewBag.Portfolio_Img3_Center" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>@ViewBag.Portfolio_Title3 2</h4>
                                 <p>@ViewBag.Portfolio_Title3</p>
                                 <div class="portfolio-links">
-                                    <a href="~/images/portfolio/3-Center.jpg" data-gall="portfolioGallery" class="venobox" title="@ViewBag.Portfolio_Title3 2"><i class="icofont-eye"></i></a>
+                                    <a href="@ViewBag.Portfolio_Img3_Center" data-gall="portfolioGallery" class="venobox" title="@ViewBag.Portfolio_Title3 2"><i class="icofont-eye"></i></a>
                                     <a href="#" title="More Details"><i class="icofont-external-link"></i></a>
                                 </div>
                             </div>
@@ -367,12 +368,12 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div class="portfolio-wrap">
-                            <img src="~/images/portfolio/1-Right.jpg" class="img-fluid" alt="">
+                            <img src="@ViewBag.Portfolio_Img1_Right" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>@ViewBag.Portfolio_Title1 3</h4>
                                 <p>@ViewBag.Portfolio_Title1</p>
                                 <div class="portfolio-links">
-                                    <a href="~/images/portfolio/1-Right.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="icofont-eye"></i></a>
+                                    <a href="@ViewBag.Portfolio_Img1_Right" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="icofont-eye"></i></a>
                                     <a href="#" title="More Details"><i class="icofont-external-link"></i></a>
                                 </div>
                             </div>
@@ -381,12 +382,12 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div class="portfolio-wrap">
-                            <img src="~/images/portfolio/2-Center.jpg" class="img-fluid" alt="">
+                            <img src="@ViewBag.Portfolio_Img2_Center" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>@ViewBag.Portfolio_Title2 2</h4>
                                 <p>@ViewBag.Portfolio_Title2</p>
                                 <div class="portfolio-links">
-                                    <a href="~/images/portfolio/2-Center.jpg" data-gall="portfolioGallery" class="venobox" title="@ViewBag.Portfolio_Title2 2"><i class="icofont-eye"></i></a>
+                                    <a href="@ViewBag.Portfolio_Img2_Center" data-gall="portfolioGallery" class="venobox" title="@ViewBag.Portfolio_Title2 2"><i class="icofont-eye"></i></a>
                                     <a href="#" title="More Details"><i class="icofont-external-link"></i></a>
                                 </div>
                             </div>
@@ -395,12 +396,12 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div class="portfolio-wrap">
-                            <img src="~/images/portfolio/2-Right.jpg" class="img-fluid" alt="">
+                            <img src="@ViewBag.Portfolio_Img2_Right" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>@ViewBag.Portfolio_Title2 3</h4>
                                 <p>@ViewBag.Portfolio_Title2</p>
                                 <div class="portfolio-links">
-                                    <a href="~/images/portfolio/2-Right.jpg" data-gall="portfolioGallery" class="venobox" title="@ViewBag.Portfolio_Title2 3"><i class="icofont-eye"></i></a>
+                                    <a href="@ViewBag.Portfolio_Img2_Right" data-gall="portfolioGallery" class="venobox" title="@ViewBag.Portfolio_Title2 3"><i class="icofont-eye"></i></a>
                                     <a href="#" title="More Details"><i class="icofont-external-link"></i></a>
                                 </div>
                             </div>
@@ -409,12 +410,12 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div class="portfolio-wrap">
-                            <img src="~/images/portfolio/3-Right.jpg" class="img-fluid" alt="">
+                            <img src="@ViewBag.Portfolio_Img3_Right" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>@ViewBag.Portfolio_Title3 3</h4>
                                 <p>@ViewBag.Portfolio_Title3</p>
                                 <div class="portfolio-links">
-                                    <a href="~/images/portfolio/3-Right.jpg" data-gall="portfolioGallery" class="venobox" title="@ViewBag.Portfolio_Title3 3"><i class="icofont-eye"></i></a>
+                                    <a href="@ViewBag.Portfolio_Img3_Right" data-gall="portfolioGallery" class="venobox" title="@ViewBag.Portfolio_Title3 3"><i class="icofont-eye"></i></a>
                                     <a href="#" title="More Details"><i class="icofont-external-link"></i></a>
                                 </div>
                             </div>

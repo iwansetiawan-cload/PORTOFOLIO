@@ -5,6 +5,7 @@
 }
 
 <div class="container">
+    
     <div class="card shadow border-0 mt-4">
         <div class="card-header bg-secondary bg-gradient ml-0 py-3">
             <div class="row">
@@ -13,6 +14,51 @@
                 </div>
             </div>
         </div>
+        <div id="accordion" class="col-12 pt-2">
+            <div class="card">
+                <div class="card-header d-md-flex justify-content-md-end">
+                    <a class="btn" data-bs-toggle="collapse" href="#textHeader">
+                        Input Header  <i class="indicator fa fa-chevron-circle-down"></i>
+                    </a>
+                </div>
+               
+                <div class="collapse" id="textHeader">
+                    <br />
+                    <div class="container">
+                        <div class="col-12 pt-2">
+                            <div class="form-group row">
+                                @Html.LabelFor(model => model.TextHeader, "Text Header", htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-10">
+                                    <textarea asp-for="TextHeader" class="form-control" id="textValues"></textarea>
+                                    <span asp-validation-for="TextHeader" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                    @*            <div class="col-4 offset-4">
+                                       <button type="submit" class="btn btn-success form-control">Save</button>
+
+                                </div>*@
+                                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <button type="button" class="btn btn-success" onclick="UpsertHeader()">Save</button>
+                                </div>
+                            </div>
+                       @*     <div class="modal-footer">
+                                <div class="form-group margin-bottom-2">
+                                    <div class="col-md-12 text-center">
+                                        <button type="button" class="btn btn-success" onclick="UpsertHeader_()">Save</button>
+                                    </div>
+                                </div>
+
+                            </div>*@
+                        </div>
+                  
+                    </div>
+                   
+                </div>
+
+            </div>
+        </div>
+
         <div class="card-body p-4">
             <div class="row pb-3">
                 <div class="col-6">
@@ -52,6 +98,12 @@
 
 @section Scripts{
     <script type="text/javascript">
+
+        $('.collapse').on('show.bs.collapse', function () {
+            $(this).parent().find(".fa-chevron-circle-down").toggleClass("fa-chevron-circle-down fa-chevron-circle-up");
+        }).on('hide.bs.collapse', function () {
+            $(this).parent().find(".fa-chevron-circle-up").toggleClass("fa-chevron-circle-up fa-chevron-circle-down");
+        });
         $(document).ready(function () {
             loadDataTable();
 
@@ -105,6 +157,24 @@
                             }
                         }
                     });
+                }
+            });
+        }
+
+        function UpsertHeader() {
+            var id = $('#textValues').val();
+            var url = "/Admin/Team/UpsertHeader/" + id;
+            $.ajax({
+                type: "POST",
+                url: url,
+                success: function (data) {
+                    if (data.success) {
+                        toastr.success(data.message);
+                        dataTable.ajax.reload();
+                    }
+                    else {
+                        toastr.error(data.message);
+                    }
                 }
             });
         }

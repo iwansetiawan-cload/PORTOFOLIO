@@ -15,17 +15,21 @@ namespace PORTOFOLIO.DataAccess.Repository
         public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
+            ApplicationUser = new ApplicationUserRepository(_db);
             Branda = new BrandaRepository(_db);
             AboutUs = new AboutUsRepository(_db); 
             Services = new ServicesRepository(_db);
             Portofolio = new PortofolioRepository(_db);
             Team = new TeamRepository(_db);
+            MsUDC = new MsUDCRepository(_db);
         }
+        public IApplicationUserRepository ApplicationUser { get; private set; }
         public IBrandaRepository Branda { get; private set; }
-        public IAboutUsRepository AboutUs { get; private set; }        
+        public IAboutUsRepository AboutUs { get; private set; }
         public IServicesRepository Services { get; private set; }
         public IPortofolioRepository Portofolio { get; private set; }
         public ITeamRepository Team { get; private set; }
+        public IMsUDCRepository MsUDC { get; private set; }
 
         public void Dispose()
         {

@@ -369,16 +369,12 @@
       "PackagePath": "staticwebassets\\images\\logo.png"
     },
     {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\04b1ff33-3416-4141-94ac-4a9565f66476.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\04b1ff33-3416-4141-94ac-4a9565f66476.jpg"
+    },
+    {
       "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\1-Center.jpg",
       "PackagePath": "staticwebassets\\images\\portfolio\\1-Center.jpg"
-    },
-    {
-      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\1-Left.jpg",
-      "PackagePath": "staticwebassets\\images\\portfolio\\1-Left.jpg"
-    },
-    {
-      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\1-Right.jpg",
-      "PackagePath": "staticwebassets\\images\\portfolio\\1-Right.jpg"
     },
     {
       "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\2-Center.jpg",
@@ -403,6 +399,38 @@
     {
       "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\3-Right.jpg",
       "PackagePath": "staticwebassets\\images\\portfolio\\3-Right.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\4ca628fd-75af-44fc-a0e2-c0d453e5190f.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\4ca628fd-75af-44fc-a0e2-c0d453e5190f.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\5ef522d5-4cd9-4da3-a698-d13783f62f74.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\5ef522d5-4cd9-4da3-a698-d13783f62f74.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\6204a4bb-8e6d-476c-8a81-e2f1cd9d3736.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\6204a4bb-8e6d-476c-8a81-e2f1cd9d3736.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\947b3270-688b-4611-9afc-dadb8d42d8d0.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\947b3270-688b-4611-9afc-dadb8d42d8d0.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\a13aea1e-1cf8-4aa4-9578-1a4f1f45444d.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\a13aea1e-1cf8-4aa4-9578-1a4f1f45444d.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\d56665cc-657f-4c17-8ff5-d5a78d9a5a49.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\d56665cc-657f-4c17-8ff5-d5a78d9a5a49.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\df9ddc36-1805-4034-844d-88f100c10dec.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\df9ddc36-1805-4034-844d-88f100c10dec.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\fa2c7a92-8eb9-4f3d-ab54-88bc24c14dc0.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\fa2c7a92-8eb9-4f3d-ab54-88bc24c14dc0.jpg"
     },
     {
       "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\services\\Hardware.jpg",
