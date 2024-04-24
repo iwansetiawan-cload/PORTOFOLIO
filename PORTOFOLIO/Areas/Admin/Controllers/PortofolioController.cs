@@ -104,7 +104,7 @@ namespace PORTOFOLIO.Areas.Admin.Controllers
                     //string fileName = Convert.ToString(vm.Flag) + "-" + vm.Position;
                     //var extenstion = ".jpg";
                     string fileName = Guid.NewGuid().ToString();
-                    var extenstion = Path.GetExtension(files[0].FileName);
+                    var extenstion = ".jpg";
 
                     if (vm.Photo != null)
                     {

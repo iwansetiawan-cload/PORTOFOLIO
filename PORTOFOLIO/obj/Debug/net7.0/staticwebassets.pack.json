@@ -361,6 +361,14 @@
       "PackagePath": "staticwebassets\\images\\SC.png"
     },
     {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\aboutus\\473fc8ae-722f-4941-ac1e-52e9d6fa5676.jpg",
+      "PackagePath": "staticwebassets\\images\\aboutus\\473fc8ae-722f-4941-ac1e-52e9d6fa5676.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\aboutus\\473fc8ae-722f-4941-ac1e-52e9d6fa5676_1920x1080.jpg",
+      "PackagePath": "staticwebassets\\images\\aboutus\\473fc8ae-722f-4941-ac1e-52e9d6fa5676_1920x1080.jpg"
+    },
+    {
       "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\aboutus\\aboutUs.jpg",
       "PackagePath": "staticwebassets\\images\\aboutus\\aboutUs.jpg"
     },
@@ -409,16 +417,52 @@
       "PackagePath": "staticwebassets\\images\\portfolio\\3cf976a0-eff6-4d79-8030-4b407f9cc387_800x600.jpg"
     },
     {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\45481152-85a7-4949-985a-7c62a40c0cb4.png",
+      "PackagePath": "staticwebassets\\images\\portfolio\\45481152-85a7-4949-985a-7c62a40c0cb4.png"
+    },
+    {
       "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\5ef522d5-4cd9-4da3-a698-d13783f62f74.jpg",
       "PackagePath": "staticwebassets\\images\\portfolio\\5ef522d5-4cd9-4da3-a698-d13783f62f74.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\61ec1843-8980-4a86-a4ec-9e3e53c01438.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\61ec1843-8980-4a86-a4ec-9e3e53c01438.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\61ec1843-8980-4a86-a4ec-9e3e53c01438_800x600.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\61ec1843-8980-4a86-a4ec-9e3e53c01438_800x600.jpg"
     },
     {
       "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\6204a4bb-8e6d-476c-8a81-e2f1cd9d3736.jpg",
       "PackagePath": "staticwebassets\\images\\portfolio\\6204a4bb-8e6d-476c-8a81-e2f1cd9d3736.jpg"
     },
     {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\6bbdaf65-f0b4-4ef6-94d4-317c24a85186.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\6bbdaf65-f0b4-4ef6-94d4-317c24a85186.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\6bbdaf65-f0b4-4ef6-94d4-317c24a85186_800x600.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\6bbdaf65-f0b4-4ef6-94d4-317c24a85186_800x600.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\792aec8b-fe26-45c0-8435-ba4cc8939c1c.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\792aec8b-fe26-45c0-8435-ba4cc8939c1c.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\792aec8b-fe26-45c0-8435-ba4cc8939c1c_800x600.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\792aec8b-fe26-45c0-8435-ba4cc8939c1c_800x600.jpg"
+    },
+    {
       "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\947b3270-688b-4611-9afc-dadb8d42d8d0.jpg",
       "PackagePath": "staticwebassets\\images\\portfolio\\947b3270-688b-4611-9afc-dadb8d42d8d0.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\9fbdb000-c44f-42e0-b516-e5227a6da74e.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\9fbdb000-c44f-42e0-b516-e5227a6da74e.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\9fbdb000-c44f-42e0-b516-e5227a6da74e_800x600.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\9fbdb000-c44f-42e0-b516-e5227a6da74e_800x600.jpg"
     },
     {
       "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\a13aea1e-1cf8-4aa4-9578-1a4f1f45444d.jpg",
@@ -427,6 +471,14 @@
     {
       "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\d56665cc-657f-4c17-8ff5-d5a78d9a5a49.jpg",
       "PackagePath": "staticwebassets\\images\\portfolio\\d56665cc-657f-4c17-8ff5-d5a78d9a5a49.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\d627da00-a21b-4662-b3ec-c20a3938028d.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\d627da00-a21b-4662-b3ec-c20a3938028d.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\d627da00-a21b-4662-b3ec-c20a3938028d_800x600.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\d627da00-a21b-4662-b3ec-c20a3938028d_800x600.jpg"
     },
     {
       "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\portfolio\\f4a388d0-a2c4-4809-a18f-c670286b9ef6.jpg",
@@ -447,6 +499,30 @@
     {
       "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\services\\Software.jpg",
       "PackagePath": "staticwebassets\\images\\services\\Software.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\slide\\2f09b2a6-fe2c-43fe-b813-904ee71d57cd.jpg",
+      "PackagePath": "staticwebassets\\images\\slide\\2f09b2a6-fe2c-43fe-b813-904ee71d57cd.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\slide\\2f09b2a6-fe2c-43fe-b813-904ee71d57cd_1920x1080.jpg",
+      "PackagePath": "staticwebassets\\images\\slide\\2f09b2a6-fe2c-43fe-b813-904ee71d57cd_1920x1080.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\slide\\4293fede-9d08-4148-9a46-1fd6fc1035c5.jpg",
+      "PackagePath": "staticwebassets\\images\\slide\\4293fede-9d08-4148-9a46-1fd6fc1035c5.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\slide\\4293fede-9d08-4148-9a46-1fd6fc1035c5_1920x1080.jpg",
+      "PackagePath": "staticwebassets\\images\\slide\\4293fede-9d08-4148-9a46-1fd6fc1035c5_1920x1080.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\slide\\83995730-d104-409b-a9fd-40a4fdde93fd.jpg",
+      "PackagePath": "staticwebassets\\images\\slide\\83995730-d104-409b-a9fd-40a4fdde93fd.jpg"
+    },
+    {
+      "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\slide\\83995730-d104-409b-a9fd-40a4fdde93fd_1920x1080.jpg",
+      "PackagePath": "staticwebassets\\images\\slide\\83995730-d104-409b-a9fd-40a4fdde93fd_1920x1080.jpg"
     },
     {
       "Id": "D:\\My File\\Core 2022\\Github\\Portofolio\\PORTOFOLIO\\wwwroot\\images\\slide\\slide-1.jpg",

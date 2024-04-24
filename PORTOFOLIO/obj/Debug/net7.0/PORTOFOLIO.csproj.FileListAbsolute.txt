@@ -540,14 +540,13 @@ D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO\obj\Debug\net7.0\refint\PORT
 D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO\obj\Debug\net7.0\PORTOFOLIO.pdb
 D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO\obj\Debug\net7.0\PORTOFOLIO.genruntimeconfig.cache
 D:\My File\MY PROJECT\VS 2022\PORTOFOLIO\PORTOFOLIO\obj\Debug\net7.0\ref\PORTOFOLIO.dll
+D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO\bin\Debug\net7.0\PORTOFOLIO.dll
 D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO\bin\Debug\net7.0\appsettings.Development.json
 D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO\bin\Debug\net7.0\appsettings.json
 D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO\bin\Debug\net7.0\PORTOFOLIO.staticwebassets.runtime.json
 D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO\bin\Debug\net7.0\PORTOFOLIO.exe
 D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO\bin\Debug\net7.0\PORTOFOLIO.deps.json
 D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO\bin\Debug\net7.0\PORTOFOLIO.runtimeconfig.json
-D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO\bin\Debug\net7.0\PORTOFOLIO.dll
-D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO\bin\Debug\net7.0\PORTOFOLIO.pdb
 D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO\bin\Debug\net7.0\Azure.Core.dll
 D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO\bin\Debug\net7.0\Azure.Identity.dll
 D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO\bin\Debug\net7.0\Humanizer.dll
@@ -810,4 +809,5 @@ D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO\obj\Debug\net7.0\PORTOFOLIO.dl
 D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO\obj\Debug\net7.0\refint\PORTOFOLIO.dll
 D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO\obj\Debug\net7.0\PORTOFOLIO.pdb
 D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO\obj\Debug\net7.0\PORTOFOLIO.genruntimeconfig.cache
+D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO\bin\Debug\net7.0\PORTOFOLIO.pdb
 D:\My File\Core 2022\Github\Portofolio\PORTOFOLIO\obj\Debug\net7.0\ref\PORTOFOLIO.dll

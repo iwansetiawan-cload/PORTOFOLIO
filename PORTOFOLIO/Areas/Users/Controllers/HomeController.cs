@@ -24,20 +24,71 @@ namespace PORTOFOLIO.Areas.Users.Controllers
         public IActionResult Index()
         {
             const int pageSize = 100;
-            ViewBag.TitleSlide1 = _unitOfWork.Branda.GetAll().Where(z => z.Position == "1").Select(z => z.Title).FirstOrDefault();
-            string textSlide1 = _unitOfWork.Branda.GetAll().Where(z => z.Position == "1").Select(z => z.Content).FirstOrDefault();
-            ViewBag.TextSlide1_ = textSlide1 != null ? textSlide1.Substring(0, pageSize) + " . . ." : textSlide1;
+            ViewBag.TitleSlide1 = _unitOfWork.Branda.GetAll().Where(z => z.Flag == 1).Select(z => z.Title).FirstOrDefault();
+            string textSlide1 = _unitOfWork.Branda.GetAll().Where(z => z.Flag == 1).Select(z => z.Content).FirstOrDefault();
+            if (textSlide1 != null)
+            {
+                ViewBag.TextSlide1_ = textSlide1.Length > 100 ? textSlide1.Substring(0, pageSize) + " . . ." : textSlide1;
+            }
+            else
+            {
+                ViewBag.TextSlide1_ = "";
+            }            
             ViewBag.TextSlide1 = textSlide1;
 
-            ViewBag.TitleSlide2 = _unitOfWork.Branda.GetAll().Where(z => z.Position == "2").Select(z => z.Title).FirstOrDefault();
-            string textSlide2 = _unitOfWork.Branda.GetAll().Where(z => z.Position == "2").Select(z => z.Content).FirstOrDefault();
-            ViewBag.TextSlide2_ = textSlide2 != null ? textSlide2.Substring(0, pageSize) + " . . ." : textSlide2;
+            ViewBag.TitleSlide2 = _unitOfWork.Branda.GetAll().Where(z => z.Flag == 2).Select(z => z.Title).FirstOrDefault();
+            string textSlide2 = _unitOfWork.Branda.GetAll().Where(z => z.Flag == 2).Select(z => z.Content).FirstOrDefault();
+            if (textSlide2 != null)
+            {
+                ViewBag.TextSlide2_ = textSlide2.Length > 100 ? textSlide2.Substring(0, pageSize) + " . . ." : textSlide2;
+            }
+            else
+            {
+                ViewBag.TextSlide2_ = "";
+            }
+            
             ViewBag.TextSlide2 = textSlide2;
 
-            ViewBag.TitleSlide3 = _unitOfWork.Branda.GetAll().Where(z => z.Position == "3").Select(z => z.Title).FirstOrDefault();
-            string textSlide3 = _unitOfWork.Branda.GetAll().Where(z => z.Position == "3").Select(z => z.Content).FirstOrDefault();
-            ViewBag.TextSlide3_ = textSlide3 != null ? textSlide3.Substring(0, pageSize) + " . . ." : textSlide3;
+            ViewBag.TitleSlide3 = _unitOfWork.Branda.GetAll().Where(z => z.Flag == 3).Select(z => z.Title).FirstOrDefault();
+            string textSlide3 = _unitOfWork.Branda.GetAll().Where(z => z.Flag == 3).Select(z => z.Content).FirstOrDefault();
+            if (textSlide3 != null)
+            {
+                ViewBag.TextSlide3_ = textSlide3.Length > 100 ? textSlide3.Substring(0, pageSize) + " . . ." : textSlide3;
+            }
+            else
+            {
+                ViewBag.TextSlide3_ = "";
+            }            
             ViewBag.TextSlide3 = textSlide3;
+
+            string slide1 = _unitOfWork.Branda.GetAll().Where(z => z.Flag == 1).Select(z => z.Photo).FirstOrDefault();
+            if (slide1 != null)
+            {
+                ViewBag.ImgSlide1 = slide1.Replace("\\", "/");
+            }
+            else
+            {
+                ViewBag.ImgSlide1 = "";
+            }
+            
+            string slide2 = _unitOfWork.Branda.GetAll().Where(z => z.Flag == 2).Select(z => z.Photo).FirstOrDefault();
+            if (slide2 != null)
+            {
+                ViewBag.ImgSlide2 = slide2.Replace("\\", "/");
+            } else
+            {
+                ViewBag.ImgSlide2 = "";
+            }
+
+            string slide3 = _unitOfWork.Branda.GetAll().Where(z => z.Flag == 3).Select(z => z.Photo).FirstOrDefault();
+            if (slide3 != null)
+            {
+                ViewBag.ImgSlide3 = slide3.Replace("\\", "/");
+            }
+            else
+            {
+                ViewBag.ImgSlide3 = "";
+            }           
 
             #region About Us
             string Description = _unitOfWork.AboutUs.GetFirstOrDefault() != null ? _unitOfWork.AboutUs.GetFirstOrDefault().Description : null;
@@ -73,6 +124,7 @@ namespace PORTOFOLIO.Areas.Users.Controllers
             ViewBag.AboutUsDesc = _unitOfWork.AboutUs.GetFirstOrDefault() != null ? _unitOfWork.AboutUs.GetFirstOrDefault().Description : "";
             ViewBag.AboutUsVision = _unitOfWork.AboutUs.GetFirstOrDefault() != null ? _unitOfWork.AboutUs.GetFirstOrDefault().Vision : "";
             ViewBag.AboutUsMision = _unitOfWork.AboutUs.GetFirstOrDefault() != null ? _unitOfWork.AboutUs.GetFirstOrDefault().Mission : "";
+            ViewBag.AboutUsImg = _unitOfWork.AboutUs.GetFirstOrDefault() != null ? _unitOfWork.AboutUs.GetFirstOrDefault().Photo : "";
             #endregion
 
             #region Service
