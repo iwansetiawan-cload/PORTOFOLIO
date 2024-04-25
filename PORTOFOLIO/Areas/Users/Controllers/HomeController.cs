@@ -179,6 +179,11 @@ namespace PORTOFOLIO.Areas.Users.Controllers
 
             ViewBag.Team_Name4 = _unitOfWork.Team.GetAll().Where(z => z.Flag == 4).Select(z => z.Name).FirstOrDefault();
             ViewBag.Team_Jobs4 = _unitOfWork.Team.GetAll().Where(z => z.Flag == 4).Select(z => z.Jobs).FirstOrDefault();
+
+            ViewBag.Team_Img1 = _unitOfWork.Team.GetAll().Where(z => z.Flag == 1).Select(z => z.Photo).FirstOrDefault();
+            ViewBag.Team_Img2 = _unitOfWork.Team.GetAll().Where(z => z.Flag == 2).Select(z => z.Photo).FirstOrDefault();
+            ViewBag.Team_Img3 = _unitOfWork.Team.GetAll().Where(z => z.Flag == 3).Select(z => z.Photo).FirstOrDefault();
+            ViewBag.Team_Img4 = _unitOfWork.Team.GetAll().Where(z => z.Flag == 4).Select(z => z.Photo).FirstOrDefault();
             #endregion
 
             return View();

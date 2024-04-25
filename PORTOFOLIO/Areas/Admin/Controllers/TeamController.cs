@@ -2,6 +2,9 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using PORTOFOLIO.DataAccess.Repository.IRepository;
 using PORTOFOLIO.Models;
+using System.Drawing.Drawing2D;
+using System.Drawing.Imaging;
+using System.Drawing;
 using System.Security.Claims;
 
 namespace PORTOFOLIO.Areas.Admin.Controllers
@@ -100,10 +103,12 @@ namespace PORTOFOLIO.Areas.Admin.Controllers
                 }
                 string webRootPath = _hostEnvironment.WebRootPath;
                 var files = HttpContext.Request.Form.Files;
+                string filenames = "";
                 if (files.Count > 0)
                 {
                     var uploads = Path.Combine(webRootPath, @"images\team");
-                    string fileName = "team-" + vm.Position;
+                    //string fileName = "team-" + vm.Position;
+                    string fileName = Guid.NewGuid().ToString();
                     var extenstion = ".jpg";
 
                     if (vm.Photo != null)
@@ -114,17 +119,56 @@ namespace PORTOFOLIO.Areas.Admin.Controllers
                         {
                             System.IO.File.Delete(imagePath);
                         }
+                        var imagePathOld = Path.Combine(webRootPath, vm.Photo.TrimStart('\\').Replace("_600x600.jpg", ".jpg"));
+                        if (System.IO.File.Exists(imagePathOld))
+                        {
+                            System.IO.File.Delete(imagePathOld);
+                        }
                     }
                     using (var filesStreams = new FileStream(Path.Combine(uploads, fileName + extenstion), FileMode.Create))
                     {
                         files[0].CopyTo(filesStreams);
                     }
-                    vm.Photo = fileName + extenstion;
+                    Resize(Path.Combine(uploads, fileName + extenstion), 600, 600);
+
+                    filenames = @"\images\team\" + fileName + extenstion;
+                    vm.Photo = filenames.Replace(".jpg", "_600x600.jpg");
                 }
                 _unitOfWork.Save();
                 return RedirectToAction(nameof(Index));
             }
             return View(vm);
+        }
+        public static void Resize(string srcPath, int width, int height)
+        {
+            Image image = Image.FromFile(srcPath);
+            Bitmap resultImage = Resize(image, width, height);
+            resultImage.Save(srcPath.Replace(".jpg", "_" + width + "x" + height + ".jpg"));
+        }
+        public static Bitmap Resize(Image image, int width, int height)
+        {
+
+            var destRect = new Rectangle(0, 0, width, height);
+            var destImage = new Bitmap(width, height);
+
+            destImage.SetResolution(image.HorizontalResolution, image.VerticalResolution);
+
+            using (var graphics = Graphics.FromImage(destImage))
+            {
+                graphics.CompositingMode = CompositingMode.SourceCopy;
+                graphics.CompositingQuality = CompositingQuality.HighQuality;
+                graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                graphics.SmoothingMode = SmoothingMode.HighQuality;
+                graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
+
+                using (var wrapMode = new ImageAttributes())
+                {
+                    wrapMode.SetWrapMode(WrapMode.TileFlipXY);
+                    graphics.DrawImage(image, destRect, 0, 0, image.Width, image.Height, GraphicsUnit.Pixel, wrapMode);
+                }
+            }
+
+            return destImage;
         }
         [HttpDelete]
         public IActionResult Delete(int id)
