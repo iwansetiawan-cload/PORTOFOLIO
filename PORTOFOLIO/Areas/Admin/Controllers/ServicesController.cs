@@ -1,12 +1,16 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using PORTOFOLIO.DataAccess.Repository.IRepository;
 using PORTOFOLIO.Models;
+using PORTOFOLIO.Utility;
+using System.Data;
 using System.Linq;
 
 namespace PORTOFOLIO.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class ServicesController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

@@ -7,10 +7,14 @@ using System.Drawing.Drawing2D;
 using System.Drawing;
 using System.Security.Claims;
 using System.Drawing.Imaging;
+using Microsoft.AspNetCore.Authorization;
+using PORTOFOLIO.Utility;
+using System.Data;
 
 namespace PORTOFOLIO.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class PortofolioController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

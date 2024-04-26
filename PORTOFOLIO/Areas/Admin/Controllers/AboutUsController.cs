@@ -4,10 +4,14 @@ using PORTOFOLIO.Models;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.Drawing;
+using Microsoft.AspNetCore.Authorization;
+using PORTOFOLIO.Utility;
+using System.Data;
 
 namespace PORTOFOLIO.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class AboutUsController : Controller
     {
       
