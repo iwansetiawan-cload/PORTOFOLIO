@@ -29,19 +29,21 @@ namespace PORTOFOLIO.Areas.Admin.Controllers
           
             AboutUs aboutus = _unitOfWork.AboutUs.GetFirstOrDefault();
 
-            //if (id == null)
-            //{
-            //    return View());
-            //}
-      
+            if (aboutus == null)
+            {
+                return View();
+            }
+
             return View(aboutus);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Index(AboutUs aboutus)
         {
-            if (ModelState.IsValid)
-            {
+
+            var errorval = ModelState.Values.SelectMany(i => i.Errors);
+            //if (ModelState.IsValid)
+            //{
 
                 if (aboutus.Id == 0)
                 {
@@ -88,7 +90,7 @@ namespace PORTOFOLIO.Areas.Admin.Controllers
                 }
                 _unitOfWork.Save();
                 //return RedirectToAction(nameof(Index));
-            }
+            //}
             return View(aboutus);
         }
         public static void Resize(string srcPath, int width, int height)
